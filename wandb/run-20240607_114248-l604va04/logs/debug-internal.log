@@ -1,0 +1,327 @@
+2024-06-07 11:42:48,740 INFO    StreamThr :21656 [internal.py:wandb_internal():86] W&B internal server running at pid: 21656, started at: 2024-06-07 11:42:48.740622
+2024-06-07 11:42:48,742 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status
+2024-06-07 11:42:48,747 INFO    WriterThread:21656 [datastore.py:open_for_write():87] open: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\run-l604va04.wandb
+2024-06-07 11:42:48,748 DEBUG   SenderThread:21656 [sender.py:send():379] send: header
+2024-06-07 11:42:48,798 DEBUG   SenderThread:21656 [sender.py:send():379] send: run
+2024-06-07 11:42:49,638 INFO    SenderThread:21656 [dir_watcher.py:__init__():211] watching files in: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files
+2024-06-07 11:42:49,639 INFO    SenderThread:21656 [sender.py:_start_run_threads():1124] run started: l604va04 with start time 1717774968.742178
+2024-06-07 11:42:49,650 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: check_version
+2024-06-07 11:42:49,650 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: check_version
+2024-06-07 11:42:50,250 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: run_start
+2024-06-07 11:42:50,322 DEBUG   HandlerThread:21656 [system_info.py:__init__():26] System info init
+2024-06-07 11:42:50,323 DEBUG   HandlerThread:21656 [system_info.py:__init__():41] System info init done
+2024-06-07 11:42:50,323 INFO    HandlerThread:21656 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 11:42:50,323 INFO    SystemMonitor:21656 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 11:42:50,323 INFO    HandlerThread:21656 [system_monitor.py:probe():214] Collecting system info
+2024-06-07 11:42:50,346 INFO    SystemMonitor:21656 [interfaces.py:start():190] Started cpu monitoring
+2024-06-07 11:42:50,350 INFO    SystemMonitor:21656 [interfaces.py:start():190] Started disk monitoring
+2024-06-07 11:42:50,351 INFO    SystemMonitor:21656 [interfaces.py:start():190] Started gpu monitoring
+2024-06-07 11:42:50,383 INFO    SystemMonitor:21656 [interfaces.py:start():190] Started memory monitoring
+2024-06-07 11:42:50,591 INFO    SystemMonitor:21656 [interfaces.py:start():190] Started network monitoring
+2024-06-07 11:42:50,636 DEBUG   HandlerThread:21656 [system_info.py:probe():150] Probing system
+2024-06-07 11:42:50,638 DEBUG   HandlerThread:21656 [system_info.py:_probe_git():135] Probing git
+2024-06-07 11:42:50,795 DEBUG   HandlerThread:21656 [system_info.py:_probe_git():143] Probing git done
+2024-06-07 11:42:50,795 DEBUG   HandlerThread:21656 [system_info.py:probe():198] Probing system done
+2024-06-07 11:42:50,796 DEBUG   HandlerThread:21656 [system_monitor.py:probe():223] {'os': 'Windows-11-10.0.22631-SP0', 'python': '3.12.2', 'heartbeatAt': '2024-06-07T15:42:50.636884', 'startedAt': '2024-06-07T15:42:48.733214', 'docker': None, 'cuda': None, 'args': ('detect', 'train', 'data=B:\\GitHub\\DualTraining.py\\CivilianDataset\\data.yaml', 'model=yolov8n.pt', 'epochs=150', 'imgsz=640', 'batch=16', 'amp=true', 'mosaic=0.8', 'auto_augment=randaugment', 'hsv_h=0.015', 'hsv_s=0.7', 'hsv_v=0.4', 'degrees=0.5', 'translate=0.25', 'scale=0.45', 'shear=0.5', 'perspective=0.0', 'flipud=0.15', 'fliplr=0.5', 'cos_lr=true', 'warmup_epochs=2.0', 'warmup_momentum=0.8', 'warmup_bias_lr=0.0001', 'lr0=0.0002', 'lrf=0.001', 'momentum=0.937', 'weight_decay=0.0005', 'project=YoloV8CivilianAircraft', 'name=AttemptGroupNorm', 'plots=True', 'visualize=true', 'save_txt=true', 'pretrained=true', 'workers=8'), 'state': 'running', 'program': '-m __main__', 'codePathLocal': None, 'git': {'remote': 'https://github.com/Logan-Cole-Luna/GroupNormalization.git', 'commit': 'e027109417f30ed6a68353cb6a19930f17c822a8'}, 'email': 'LoganLambeth8@gmail.com', 'root': 'B:/GitHub/GroupNormalization', 'host': 'DESKTOP-JA3B0L7', 'username': 'Logan', 'executable': 'C:\\Users\\Logan\\AppData\\Local\\Programs\\Python\\Python312\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3593.0, 'min': 0.0, 'max': 3593.0}, 'cpu_freq_per_core': [{'current': 3593.0, 'min': 0.0, 'max': 3593.0}], 'disk': {'/': {'total': 476.93847274780273, 'used': 365.14837646484375}}, 'gpu': 'NVIDIA GeForce RTX 3060', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060', 'memory_total': 12884901888}], 'memory': {'total': 63.94804763793945}}
+2024-06-07 11:42:50,796 INFO    HandlerThread:21656 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-07 11:42:50,796 INFO    HandlerThread:21656 [system_monitor.py:probe():227] Publishing system info
+2024-06-07 11:42:50,796 INFO    HandlerThread:21656 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-07 11:42:50,846 DEBUG   SenderThread:21656 [sender.py:send():379] send: files
+2024-06-07 11:42:50,846 INFO    SenderThread:21656 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-06-07 11:42:50,973 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: python_packages
+2024-06-07 11:42:50,973 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: python_packages
+2024-06-07 11:42:50,973 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:42:50,974 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:42:50,980 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:42:51,668 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\requirements.txt
+2024-06-07 11:42:51,669 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\wandb-metadata.json
+2024-06-07 11:42:51,897 DEBUG   SenderThread:21656 [sender.py:send():379] send: telemetry
+2024-06-07 11:42:51,943 INFO    wandb-upload_0:21656 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp6ke2fumnwandb\w4xhv34q-wandb-metadata.json
+2024-06-07 11:42:52,674 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:42:53,834 DEBUG   SenderThread:21656 [sender.py:send():379] send: telemetry
+2024-06-07 11:42:53,834 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:42:54,681 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:42:56,698 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:42:57,702 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:42:59,580 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:43:04,631 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:43:05,980 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:43:05,980 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:43:05,980 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:43:10,191 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:43:15,247 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:43:20,272 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:43:20,975 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:43:20,989 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:43:21,000 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:43:21,053 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\config.yaml
+2024-06-07 11:43:25,588 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:43:26,158 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:43:30,624 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:43:35,638 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:43:35,985 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:43:36,000 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:43:36,000 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:43:41,491 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:43:46,538 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:43:50,606 DEBUG   SystemMonitor:21656 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 11:43:50,606 DEBUG   SenderThread:21656 [sender.py:send():379] send: stats
+2024-06-07 11:43:51,036 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:43:51,037 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:43:51,086 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:43:52,266 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:43:57,354 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:44:02,401 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:44:06,008 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:44:06,054 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:44:06,054 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:44:08,206 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:44:12,773 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:13,782 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:14,187 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:44:14,786 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:15,797 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:17,821 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:19,284 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:44:19,843 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:20,611 DEBUG   SenderThread:21656 [sender.py:send():379] send: stats
+2024-06-07 11:44:21,015 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:44:21,062 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:44:21,062 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:44:22,932 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:23,938 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:24,394 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:44:26,084 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:28,191 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:29,759 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:44:30,217 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:32,247 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:34,275 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:35,314 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:44:35,315 DEBUG   SenderThread:21656 [sender.py:send():379] send: telemetry
+2024-06-07 11:44:35,315 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:44:35,315 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:44:36,025 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:44:36,072 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:44:36,072 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:44:36,291 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:38,309 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:40,317 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:40,883 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:44:42,334 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:44,357 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:46,028 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:44:46,367 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:48,374 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:50,391 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:50,623 DEBUG   SenderThread:21656 [sender.py:send():379] send: stats
+2024-06-07 11:44:51,028 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:44:51,058 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:44:51,076 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:44:51,077 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:44:52,394 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:54,420 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:56,427 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:44:56,577 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:44:57,430 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\config.yaml
+2024-06-07 11:44:58,431 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:00,451 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:02,070 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:45:02,463 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:04,361 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:45:04,478 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:04,818 DEBUG   SenderThread:21656 [sender.py:send():379] send: files
+2024-06-07 11:45:04,818 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:45:04,818 INFO    SenderThread:21656 [sender.py:_save_file():1390] saving file media\images\labels_1_75b122c290eb97c5462f.jpg with policy now
+2024-06-07 11:45:04,842 DEBUG   SenderThread:21656 [sender.py:send():379] send: files
+2024-06-07 11:45:04,842 INFO    SenderThread:21656 [sender.py:_save_file():1390] saving file media\images\train_batch0_1_7f83b29f88844a84c9f6.jpg with policy now
+2024-06-07 11:45:04,842 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:45:04,866 DEBUG   SenderThread:21656 [sender.py:send():379] send: files
+2024-06-07 11:45:04,866 INFO    SenderThread:21656 [sender.py:_save_file():1390] saving file media\images\train_batch1_1_f4bbe038be122f2bb2bb.jpg with policy now
+2024-06-07 11:45:04,866 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:45:04,890 DEBUG   SenderThread:21656 [sender.py:send():379] send: files
+2024-06-07 11:45:04,890 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:45:04,890 INFO    SenderThread:21656 [sender.py:_save_file():1390] saving file media\images\train_batch2_1_ce09982ac2a3801565f2.jpg with policy now
+2024-06-07 11:45:05,097 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:45:05,334 INFO    wandb-upload_0:21656 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp6ke2fumnwandb\s5ijhxzo-media/images/labels_1_75b122c290eb97c5462f.jpg
+2024-06-07 11:45:05,480 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\media\images\train_batch1_1_f4bbe038be122f2bb2bb.jpg
+2024-06-07 11:45:05,480 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\media\images\train_batch0_1_7f83b29f88844a84c9f6.jpg
+2024-06-07 11:45:05,482 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\media\images\train_batch2_1_ce09982ac2a3801565f2.jpg
+2024-06-07 11:45:05,482 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\media\images\labels_1_75b122c290eb97c5462f.jpg
+2024-06-07 11:45:05,483 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\media\images
+2024-06-07 11:45:05,483 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\media
+2024-06-07 11:45:06,040 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:45:06,103 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:45:06,103 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:45:06,494 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:07,023 INFO    wandb-upload_3:21656 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp6ke2fumnwandb\2gwqqd6r-media/images/train_batch2_1_ce09982ac2a3801565f2.jpg
+2024-06-07 11:45:07,153 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:45:07,951 INFO    wandb-upload_2:21656 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp6ke2fumnwandb\xm16xdyj-media/images/train_batch1_1_f4bbe038be122f2bb2bb.jpg
+2024-06-07 11:45:08,090 INFO    wandb-upload_0:21656 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp6ke2fumnwandb\m9tdchb7-media/images/labels_1_75b122c290eb97c5462f.jpg
+2024-06-07 11:45:08,522 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:09,752 INFO    wandb-upload_3:21656 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp6ke2fumnwandb\v7c6i4ww-media/images/train_batch2_1_ce09982ac2a3801565f2.jpg
+2024-06-07 11:45:09,786 INFO    wandb-upload_1:21656 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp6ke2fumnwandb\9fjx23y5-media/images/train_batch0_1_7f83b29f88844a84c9f6.jpg
+2024-06-07 11:45:10,527 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:11,283 INFO    wandb-upload_0:21656 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp6ke2fumnwandb\nlp0n4v9-media/images/train_batch1_1_f4bbe038be122f2bb2bb.jpg
+2024-06-07 11:45:12,044 INFO    wandb-upload_3:21656 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp6ke2fumnwandb\mfguqz4z-media/images/train_batch0_1_7f83b29f88844a84c9f6.jpg
+2024-06-07 11:45:12,357 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:45:12,553 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:14,586 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:16,615 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:17,393 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:45:18,632 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:20,628 DEBUG   SenderThread:21656 [sender.py:send():379] send: stats
+2024-06-07 11:45:20,660 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:21,050 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:45:21,116 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:45:21,116 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:45:22,493 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:45:22,493 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:45:22,495 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:45:22,495 DEBUG   SenderThread:21656 [sender.py:send():379] send: history
+2024-06-07 11:45:22,495 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: summary_record
+2024-06-07 11:45:22,496 INFO    SenderThread:21656 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-07 11:45:22,688 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:22,689 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\wandb-summary.json
+2024-06-07 11:45:24,720 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:26,780 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:28,100 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:45:29,126 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:31,155 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:32,161 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:33,327 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:45:34,186 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:36,053 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:45:36,117 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:45:36,117 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:45:36,811 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:38,416 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:45:38,918 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:40,935 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:43,070 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:44,250 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:44,397 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:45:46,270 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:48,287 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:49,711 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:45:50,407 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:50,640 DEBUG   SenderThread:21656 [sender.py:send():379] send: stats
+2024-06-07 11:45:51,062 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:45:51,131 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:45:51,133 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:45:52,437 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:54,453 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:54,817 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:45:56,466 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:45:58,486 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:00,376 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:46:00,496 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:02,616 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:04,630 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:05,979 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:46:06,063 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:46:06,126 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:46:06,127 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:46:06,657 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:08,683 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:10,706 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:10,991 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:46:11,348 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:46:12,733 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:14,977 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:16,075 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:46:17,009 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:19,231 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:20,645 DEBUG   SenderThread:21656 [sender.py:send():379] send: stats
+2024-06-07 11:46:21,071 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:46:21,098 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:46:21,144 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:46:21,145 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:46:21,240 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:23,267 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:25,314 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:26,145 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:46:27,321 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:29,149 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:46:29,151 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:46:29,151 DEBUG   SenderThread:21656 [sender.py:send():379] send: history
+2024-06-07 11:46:29,151 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: summary_record
+2024-06-07 11:46:29,152 INFO    SenderThread:21656 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-07 11:46:29,329 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:29,330 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\wandb-summary.json
+2024-06-07 11:46:31,351 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:31,483 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:46:33,385 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:35,405 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:36,078 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:46:36,142 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:46:36,142 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:46:36,581 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:46:37,415 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:39,421 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:41,434 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:41,726 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:46:43,448 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:45,471 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:46,936 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:46:47,491 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:49,502 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:50,648 DEBUG   SenderThread:21656 [sender.py:send():379] send: stats
+2024-06-07 11:46:51,089 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:46:51,151 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:46:51,151 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:46:51,514 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:52,572 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:46:53,522 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:55,533 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:57,544 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:46:57,655 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:46:59,556 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:01,573 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:03,270 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:47:03,593 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:05,612 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:06,107 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:47:06,143 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:47:06,143 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:47:07,233 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:47:07,623 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:08,405 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:47:08,628 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:09,632 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:11,664 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:13,622 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:47:13,700 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:14,730 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:16,748 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:18,681 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:47:18,766 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:20,658 DEBUG   SenderThread:21656 [sender.py:send():379] send: stats
+2024-06-07 11:47:20,785 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:21,096 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:47:21,158 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:47:21,160 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:47:22,807 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:23,772 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:47:24,489 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:47:24,490 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-07 11:47:24,490 DEBUG   SenderThread:21656 [sender.py:send():379] send: history
+2024-06-07 11:47:24,490 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: summary_record
+2024-06-07 11:47:24,491 INFO    SenderThread:21656 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-07 11:47:24,830 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:24,830 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\wandb-summary.json
+2024-06-07 11:47:26,864 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:28,873 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:47:28,899 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:30,901 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:32,923 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:34,550 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:47:34,945 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:36,105 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-07 11:47:36,167 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-07 11:47:36,168 DEBUG   SenderThread:21656 [sender.py:send_request():406] send_request: stop_status
+2024-06-07 11:47:36,966 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:38,987 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:40,237 DEBUG   HandlerThread:21656 [handler.py:handle_request():146] handle_request: status_report
+2024-06-07 11:47:41,001 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log
+2024-06-07 11:47:43,016 INFO    Thread-16 :21656 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\GroupNormalization\wandb\run-20240607_114248-l604va04\files\output.log

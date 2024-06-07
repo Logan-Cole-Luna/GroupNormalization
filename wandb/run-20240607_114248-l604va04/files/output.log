@@ -1,0 +1,123 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning B:\GitHub\DualTraining.py\CivilianDataset\train\labels.cache... 1667 images, 0 backgrounds, 0 corrupt: 100%|██████████| 1667/1667 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning B:\GitHub\DualTraining.py\CivilianDataset\valid\labels.cache... 1666 images, 0 backgrounds, 0 corrupt: 100%|██████████| 1666/1666 [00:00<?, ?it/s]
+Plotting labels to YoloV8CivilianAircraft\AttemptGroupNorm2\labels.jpg...
+  0%|          | 0/105 [00:00<?, ?it/s]
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.0002' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.00013, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mYoloV8CivilianAircraft\AttemptGroupNorm2
+Starting training for 150 epochs...
+
+
+
+
+
+
+
+
+
+
+      1/150      2.42G     0.9312      4.775      1.348          5        640: 100%|██████████| 105/105 [00:22<00:00,  4.74it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 53/53 [00:28<00:00,  1.85it/s]
+      2/150      2.41G     0.6122       4.44      1.093         45        640:   3%|▎         | 3/105 [00:00<00:18,  5.37it/s]
+                   all       1666       1666     0.0243      0.436     0.0299     0.0254
+
+
+
+
+
+
+
+
+      2/150      2.43G     0.6626      4.269       1.14          5        640: 100%|██████████| 105/105 [00:17<00:00,  6.04it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  94%|█████████▍| 50/53 [00:46<00:02,  1.17it/s]
+                   all       1666       1666     0.0223      0.881     0.0513     0.0447
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 53/53 [00:48<00:00,  1.09it/s]
+
+
+
+
+
+
+
+
+      3/150      2.42G     0.7019      3.912      1.156          7        640: 100%|██████████| 105/105 [00:17<00:00,  5.91it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  96%|█████████▌| 51/53 [00:36<00:01,  1.42it/s]
+                   all       1666       1666      0.267      0.175     0.0834     0.0682
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 53/53 [00:37<00:00,  1.41it/s]
+
+
+
+
+
+
+
+
+      4/150      2.42G     0.7015      3.621      1.151          4        640: 100%|██████████| 105/105 [00:17<00:00,  6.09it/s]
+
+
+
+
+
+
+
+
