@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: yolov8n.pt
-data: B:\GitHub\DualTraining.py\CivilianDataset
+data: B:\GitHub\DualTraining.py\CivilianDataset\data.yaml
 epochs: 150
 time: null
 patience: 100
