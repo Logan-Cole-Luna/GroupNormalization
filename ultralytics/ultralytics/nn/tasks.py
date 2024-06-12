@@ -55,8 +55,8 @@ from ultralytics.utils.checks import check_requirements, check_suffix, check_yam
 from ultralytics.utils.loss import v8ClassificationLoss, v8DetectionLoss, v8OBBLoss, v8PoseLoss, v8SegmentationLoss
 from ultralytics.utils.plotting import feature_visualization
 from ultralytics.utils.torch_utils import (
-    fuse_conv_and_gn,
-    fuse_deconv_and_gn,
+    fuse_conv_and_norm,
+    fuse_deconv_and_norm,
     initialize_weights,
     intersect_dicts,
     make_divisible,
@@ -67,7 +67,6 @@ from ultralytics.utils.torch_utils import (
 
 try:
     import thop
-    print("Here")
 except ImportError:
     thop = None
 
@@ -179,15 +178,15 @@ class BaseModel(nn.Module):
         """
         if not self.is_fused():
             for m in self.model.modules():
-                if isinstance(m, (Conv, Conv2, DWConv)) and hasattr(m, "gn"):
+                if isinstance(m, (Conv, Conv2, DWConv)) and hasattr(m, "norm"):
                     if isinstance(m, Conv2):
                         m.fuse_convs()
-                    m.conv = fuse_conv_and_gn(m.conv, m.gn)  # update conv
-                    delattr(m, "gn")  # remove groupnorm
+                    m.conv = fuse_conv_and_norm(m.conv, m.norm)  # update conv
+                    delattr(m, "norm")  # remove normalization
                     m.forward = m.forward_fuse  # update forward
-                if isinstance(m, ConvTranspose) and hasattr(m, "gn"):
-                    m.conv_transpose = fuse_deconv_and_gn(m.conv_transpose, m.gn)
-                    delattr(m, "gn")  # remove groupnorm
+                if isinstance(m, ConvTranspose) and hasattr(m, "norm"):
+                    m.conv_transpose = fuse_deconv_and_norm(m.conv_transpose, m.norm)
+                    delattr(m, "norm")  # remove normalization
                     m.forward = m.forward_fuse  # update forward
                 if isinstance(m, RepConv):
                     m.fuse_convs()
@@ -206,8 +205,8 @@ class BaseModel(nn.Module):
         Returns:
             (bool): True if the number of GroupNorm layers in the model is less than the threshold, False otherwise.
         """
-        gn = tuple(v for k, v in nn.__dict__.items() if "Norm" in k)  # normalization layers, i.e. GroupNorm()
-        return sum(isinstance(v, gn) for v in self.modules()) < thresh  # True if < 'thresh' GroupNorm layers in model
+        norm = tuple(v for k, v in nn.__dict__.items() if "Norm" in k)  # normalization layers, i.e. GroupNorm()
+        return sum(isinstance(v, norm) for v in self.modules()) < thresh  # True if < 'thresh' GroupNorm layers in model
 
     def info(self, detailed=False, verbose=True, imgsz=640):
         """
@@ -828,7 +827,7 @@ def attempt_load_one_weight(weight, device=None, inplace=True, fuse=False):
     return model, ckpt
 
 
-def parse_model(d, ch, verbose=True):  # model_dict, input_channels(3)
+def parse_model(d, ch, verbose=True, norm_type='none'):  # model_dict, input_channels(3), normalization type
     """Parse a YOLO model.yaml dictionary into a PyTorch model."""
     import ast
 
@@ -897,7 +896,7 @@ def parse_model(d, ch, verbose=True):  # model_dict, input_channels(3)
                 )  # num heads
 
             args = [c1, c2, *args[1:]]
-            if m in {BottleneckCSP, C1, C2, C2f, C2fAttn, C3, C3TR, C3Ghost, C3x, RepC3}:
+            if m in {BottleneckCSP, C1, C2, C2fAttn, C2f, C3, C3TR, C3Ghost, C3x, RepC3}:
                 args.insert(2, n)  # number of repeats
                 n = 1
         elif m is AIFI:
@@ -912,6 +911,10 @@ def parse_model(d, ch, verbose=True):  # model_dict, input_channels(3)
             c2 = args[1] if args[3] else args[1] * 4
         elif m is nn.BatchNorm2d:
             args = [ch[f]]
+        elif m is nn.GroupNorm:
+            args = [32, ch[f]]  # Example: 32 groups, input channels
+        elif m is nn.LayerNorm:
+            args = [ch[f]]  # LayerNorm typically doesn't need additional args
         elif m is Concat:
             c2 = sum(ch[x] for x in f)
         elif m in {Detect, WorldDetect, Segment, Pose, OBB, ImagePoolingAttn}:
@@ -929,7 +932,13 @@ def parse_model(d, ch, verbose=True):  # model_dict, input_channels(3)
         else:
             c2 = ch[f]
 
-        m_ = nn.Sequential(*(m(*args) for _ in range(n))) if n > 1 else m(*args)  # module
+        norm_type = d.get("norm_type", "none")  # Default to 'none' if not specified
+        # Conditionally add norm_type for Conv class
+        if m == Conv:
+            m_ = nn.Sequential(*(m(*args, norm_type=norm_type) for _ in range(n))) if n > 1 else m(*args, norm_type=norm_type)  # module
+        else:
+            m_ = nn.Sequential(*(m(*args) for _ in range(n))) if n > 1 else m(*args)  # module
+
         t = str(m)[8:-2].replace("__main__.", "")  # module type
         m.np = sum(x.numel() for x in m_.parameters())  # number params
         m_.i, m_.f, m_.type = i, f, t  # attach index, 'from' index, type

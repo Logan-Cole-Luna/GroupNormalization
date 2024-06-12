@@ -176,41 +176,87 @@ def time_sync():
     return time.time()
 
 
-def fuse_conv_and_gn(conv, gn):
+def fuse_conv_and_norm(conv, norm):
     """
-    Fuse convolution and group normalization layers.
-    This function handles the fusion of a Conv2d layer followed by a GroupNorm layer.
+    Fuse convolution and normalization layers.
+    This function handles the fusion of a Conv2d layer followed by a normalization layer.
     """
     with torch.no_grad():
-        if isinstance(gn, nn.GroupNorm):
+        if isinstance(norm, nn.GroupNorm):
             w_conv = conv.weight.clone().view(conv.out_channels, -1)
-            w_gn = gn.weight.div(torch.sqrt(gn.eps + gn.bias.view(-1, 1, 1, 1).reshape(-1)))
-            fused_weight = w_conv * w_gn.view(-1, 1)
+            w_norm = norm.weight.div(torch.sqrt(norm.eps + norm.running_var))
+            fused_weight = w_conv * w_norm.view(-1, 1)
 
             fused_bias = (conv.bias if conv.bias is not None else torch.zeros(conv.out_channels, device=w_conv.device))
-            fused_bias = fused_bias - gn.weight * gn.bias / torch.sqrt(gn.eps + gn.bias)
+            fused_bias = fused_bias - norm.weight * norm.running_mean / torch.sqrt(norm.eps + norm.running_var)
 
-            fused_conv = nn.Conv2d(conv.in_channels,
-                                   conv.out_channels,
-                                   kernel_size=conv.kernel_size,
-                                   stride=conv.stride,
-                                   padding=conv.padding,
-                                   dilation=conv.dilation,
-                                   groups=conv.groups,
-                                   bias=True).to(conv.weight.device)
+        elif isinstance(norm, nn.BatchNorm2d):
+            w_conv = conv.weight.clone().view(conv.out_channels, -1)
+            w_norm = norm.weight.div(torch.sqrt(norm.eps + norm.running_var))
+            fused_weight = w_conv * w_norm.view(-1, 1)
 
-            fused_conv.weight.copy_(fused_weight.view(fused_conv.weight.size()))
-            fused_conv.bias.copy_(fused_bias)
+            fused_bias = (conv.bias if conv.bias is not None else torch.zeros(conv.out_channels, device=w_conv.device))
+            fused_bias = norm.bias + norm.weight * (fused_bias - norm.running_mean) / torch.sqrt(norm.running_var + norm.eps)
 
-            return fused_conv
+        elif isinstance(norm, nn.LayerNorm):
+            w_conv = conv.weight.clone().view(conv.out_channels, -1)
+            w_norm = norm.weight.div(torch.sqrt(norm.eps + norm.running_var))
+            fused_weight = w_conv * w_norm.view(-1, 1)
+
+            fused_bias = (conv.bias if conv.bias is not None else torch.zeros(conv.out_channels, device=w_conv.device))
+            fused_bias = norm.bias + norm.weight * (fused_bias - norm.running_mean) / torch.sqrt(norm.running_var + norm.eps)
+
         else:
-            raise ValueError("The normalization layer is not a GroupNorm instance.")
+            raise ValueError("Unsupported normalization type.")
+
+        fused_conv = nn.Conv2d(conv.in_channels,
+                               conv.out_channels,
+                               kernel_size=conv.kernel_size,
+                               stride=conv.stride,
+                               padding=conv.padding,
+                               dilation=conv.dilation,
+                               groups=conv.groups,
+                               bias=True).to(conv.weight.device)
+
+        fused_conv.weight.copy_(fused_weight.view(fused_conv.weight.size()))
+        fused_conv.bias.copy_(fused_bias)
+
+        return fused_conv
 
 
-def fuse_deconv_and_gn(deconv, gn):
-    """Fuse ConvTranspose2d() and GroupNorm() layers."""
-    fuseddconv = (
-        nn.ConvTranspose2d(
+def fuse_deconv_and_norm(deconv, norm):
+    """
+    Fuse ConvTranspose2d() and normalization layers.
+    """
+    with torch.no_grad():
+        if isinstance(norm, nn.GroupNorm):
+            w_deconv = deconv.weight.clone().view(deconv.out_channels, -1)
+            w_norm = torch.diag(norm.weight.div(torch.sqrt(norm.eps + norm.running_var)))
+            fused_weight = torch.mm(w_norm, w_deconv).view(deconv.weight.shape)
+
+            fused_bias = (deconv.bias if deconv.bias is not None else torch.zeros(deconv.weight.shape[1], device=deconv.weight.device))
+            fused_bias = norm.bias - norm.weight.mul(norm.running_mean).div(torch.sqrt(norm.running_var + norm.eps))
+
+        elif isinstance(norm, nn.BatchNorm2d):
+            w_deconv = deconv.weight.clone().view(deconv.out_channels, -1)
+            w_norm = torch.diag(norm.weight.div(torch.sqrt(norm.eps + norm.running_var)))
+            fused_weight = torch.mm(w_norm, w_deconv).view(deconv.weight.shape)
+
+            fused_bias = (deconv.bias if deconv.bias is not None else torch.zeros(deconv.weight.shape[1], device=deconv.weight.device))
+            fused_bias = norm.bias - norm.weight.mul(norm.running_mean).div(torch.sqrt(norm.running_var + norm.eps))
+
+        elif isinstance(norm, nn.LayerNorm):
+            w_deconv = deconv.weight.clone().view(deconv.out_channels, -1)
+            w_norm = torch.diag(norm.weight.div(torch.sqrt(norm.eps + norm.running_var)))
+            fused_weight = torch.mm(w_norm, w_deconv).view(deconv.weight.shape)
+
+            fused_bias = (deconv.bias if deconv.bias is not None else torch.zeros(deconv.weight.shape[1], device=deconv.weight.device))
+            fused_bias = norm.bias - norm.weight.mul(norm.running_mean).div(torch.sqrt(norm.running_var + norm.eps))
+
+        else:
+            raise ValueError("Unsupported normalization type.")
+
+        fused_deconv = nn.ConvTranspose2d(
             deconv.in_channels,
             deconv.out_channels,
             kernel_size=deconv.kernel_size,
@@ -220,22 +266,12 @@ def fuse_deconv_and_gn(deconv, gn):
             dilation=deconv.dilation,
             groups=deconv.groups,
             bias=True,
-        )
-        .requires_grad_(False)
-        .to(deconv.weight.device)
-    )
+        ).to(deconv.weight.device)
 
-    # Prepare filters
-    w_deconv = deconv.weight.clone().view(deconv.out_channels, -1)
-    w_gn = torch.diag(gn.weight.div(torch.sqrt(gn.eps + gn.running_var)))
-    fuseddconv.weight.copy_(torch.mm(w_gn, w_deconv).view(fuseddconv.weight.shape))
+        fused_deconv.weight.copy_(fused_weight)
+        fused_deconv.bias.copy_(fused_bias)
 
-    # Prepare spatial bias
-    b_conv = torch.zeros(deconv.weight.shape[1], device=deconv.weight.device) if deconv.bias is None else deconv.bias
-    b_gn = gn.bias - gn.weight.mul(gn.running_mean).div(torch.sqrt(gn.running_var + gn.eps))
-    fuseddconv.bias.copy_(torch.mm(w_gn, b_conv.reshape(-1, 1)).reshape(-1) + b_gn)
-
-    return fuseddconv
+        return fused_deconv
 
 
 def model_info(model, detailed=False, verbose=True, imgsz=640):

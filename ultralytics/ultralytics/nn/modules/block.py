@@ -18,7 +18,7 @@ __all__ = (
     "C2fAttn",
     "ImagePoolingAttn",
     "ContrastiveHead",
-    "GNContrastiveHead",
+    "NormContrastiveHead",
     "C3x",
     "C3TR",
     "C3Ghost",
@@ -348,7 +348,7 @@ class BottleneckCSP(nn.Module):
         self.cv2 = nn.Conv2d(c1, c_, 1, 1, bias=False)
         self.cv3 = nn.Conv2d(c_, c_, 1, 1, bias=False)
         self.cv4 = Conv(2 * c_, c2, 1, 1)
-        self.gn = nn.GroupNorm(32, 2 * c_)  # applied to cat(cv2, cv3)
+        self.norm = nn.GroupNorm(c_, 2 * c_)  # applied to cat(cv2, cv3)
         self.act = nn.SiLU()
         self.m = nn.Sequential(*(Bottleneck(c_, c_, shortcut, g, e=1.0) for _ in range(n)))
 
@@ -356,7 +356,7 @@ class BottleneckCSP(nn.Module):
         """Applies a CSP bottleneck with 3 convolutions."""
         y1 = self.cv3(self.m(self.cv1(x)))
         y2 = self.cv2(x)
-        return self.cv4(self.act(self.gn(torch.cat((y1, y2), 1))))
+        return self.cv4(self.act(self.norm(torch.cat((y1, y2), 1))))
 
 
 class ResNetBlock(nn.Module):
@@ -528,7 +528,7 @@ class ContrastiveHead(nn.Module):
         return x * self.logit_scale.exp() + self.bias
 
 
-class GNContrastiveHead(nn.Module):
+class NormContrastiveHead(nn.Module):
     """
     Batch Norm Contrastive Head for YOLO-World using batch norm instead of l2-normalization.
 
@@ -539,7 +539,8 @@ class GNContrastiveHead(nn.Module):
     def __init__(self, embed_dims: int):
         """Initialize ContrastiveHead with region-text similarity parameters."""
         super().__init__()
-        self.norm = nn.GroupNorm(32, embed_dims)
+        num_groups = int(embed_dims/2)
+        self.norm = nn.GroupNorm(num_groups, embed_dims)
         # NOTE: use -10.0 to keep the init cls loss consistency with other losses
         self.bias = nn.Parameter(torch.tensor([-10.0]))
         # use -1.0 is more stable
