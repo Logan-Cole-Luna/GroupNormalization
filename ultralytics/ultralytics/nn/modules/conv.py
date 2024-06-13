@@ -32,19 +32,32 @@ def autopad(k, p=None, d=1):  # kernel, padding, dilation
 import torch
 
 
-def calculate_running_stats(x, num_groups):
-    """Calculate running mean and variance for GroupNorm."""
-    N, C, H, W = x.size()
-    G = num_groups
-    x = x.view(N, G, -1)
+def calculate_running_stats(input_tensor, num_groups):
+    """
+    Calculate running mean and variance for Group Normalization (GroupNorm).
+    Args:
+        input_tensor (torch.Tensor): The input tensor with shape (N, C, H, W).
+        num_groups (int): The number of groups for Group Normalization.
+    Returns:
+        torch.Tensor: The running mean of the input tensor.
+        torch.Tensor: The running variance of the input tensor.
+    """
+    batch_size, num_channels, height, width = input_tensor.size()
+    groups = num_groups
 
-    running_mean = x.mean(dim=-1, keepdim=True).view(N, G, 1, 1, 1)
-    running_var = x.var(dim=-1, keepdim=True, unbiased=False).view(N, G, 1, 1, 1)
+    # Reshape the input tensor to (N, G, -1) where G is the number of groups
+    reshaped_tensor = input_tensor.view(batch_size, groups, -1)
 
-    running_mean = running_mean.mean(dim=0).repeat(1, C // G, H, W).view(C, H, W).detach()
-    running_var = running_var.mean(dim=0).repeat(1, C // G, H, W).view(C, H, W).detach()
+    # Calculate the mean and variance along the last dimension (within each group)
+    group_mean = reshaped_tensor.mean(dim=-1, keepdim=True).view(batch_size, groups, 1, 1, 1)
+    group_var = reshaped_tensor.var(dim=-1, keepdim=True, unbiased=False).view(batch_size, groups, 1, 1, 1)
+
+    # Average the group means and variances across the batch dimension
+    running_mean = group_mean.mean(dim=0).repeat(1, num_channels // groups, height, width).view(num_channels, height, width).detach()
+    running_var = group_var.mean(dim=0).repeat(1, num_channels // groups, height, width).view(num_channels, height, width).detach()
 
     return running_mean, running_var
+
 
 
 class Conv(nn.Module):
