@@ -1,0 +1,100 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+Plotting labels to C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train242\labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000119, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mC:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train242
+Starting training for 1 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+        1/1     0.956G      1.402      2.536      1.441         38        640: 100%|██████████| 32/32 [00:04<00:00,  6.76it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:03<00:00,  4.69it/s]
+                   all        128        929      0.439      0.321      0.357      0.248
+1 epochs completed in 0.004 hours.
+Optimizer stripped from C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train242\weights\last.pt, 6.5MB
+Optimizer stripped from C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train242\weights\best.pt, 6.5MB
+Validating C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train242\weights\best.pt...
+Ultralytics YOLOv8.2.32 🚀 Python-3.12.2 torch-2.2.2+cu121 CUDA:0 (NVIDIA GeForce RTX 3060, 12287MiB)
+YOLOv8 summary (fused): 175 layers, 3152592 parameters, 2542848 gradients, 8.7 GFLOPs
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 10.32it/s]
+                   all        128        929      0.442      0.321      0.356      0.247
+                person         61        254      0.536      0.591      0.587      0.383
+               bicycle          3          6      0.344      0.167      0.208     0.0723
+                   car         12         46      0.507       0.13      0.196     0.0688
+            motorcycle          4          5       0.65        0.6      0.605      0.434
+              airplane          5          6      0.278      0.333      0.479       0.36
+                   bus          5          7      0.605      0.714      0.684      0.586
+                 train          3          3      0.322      0.667      0.741      0.257
+                 truck          5         12      0.603       0.25      0.377      0.196
+                  boat          2          6      0.321      0.167      0.205     0.0644
+         traffic light          4         14      0.406      0.143      0.119     0.0287
+             stop sign          2          2      0.593        0.5      0.505      0.454
+                 bench          5          9      0.344      0.111     0.0663     0.0925
+                  bird          2         16      0.778      0.375      0.584      0.239
+                   cat          4          4      0.509       0.75      0.782      0.539
+                   dog          9          9      0.169      0.111      0.118     0.0818
+                 horse          1          2      0.448          1      0.995      0.697
+              elephant          4         17      0.669      0.412      0.443      0.261
+                  bear          1          1          1          0      0.995      0.895
+                 zebra          2          4      0.783      0.916      0.945      0.902
+               giraffe          4          9          1      0.315      0.502      0.263
+              backpack          4          6      0.264      0.333      0.218      0.119
+              umbrella          4         18      0.474      0.278      0.324      0.147
+               handbag          9         19      0.356      0.158      0.151     0.0595
+                   tie          6          7      0.536      0.714      0.677      0.486
+              suitcase          2          4          0          0     0.0586     0.0445
+               frisbee          5          5      0.323        0.6      0.564      0.491
+                  skis          1          1      0.193          1      0.497      0.075
+             snowboard          2          7      0.254        0.2      0.223     0.0973
+           sports ball          6          6      0.285      0.167      0.191      0.146
+                  kite          2         10      0.331        0.4      0.165     0.0594
+          baseball bat          4          4          0          0          0          0
+        baseball glove          4          7          1          0      0.385      0.221
+            skateboard          3          5      0.445        0.2      0.114     0.0534
+         tennis racket          5          7      0.136      0.143      0.178       0.12
+                bottle          6         18      0.339      0.222      0.251      0.125
+            wine glass          5         16      0.559      0.312      0.295      0.197
+                   cup         10         36      0.223      0.194       0.19      0.137
+                  fork          6          6      0.428      0.167       0.17      0.151
+                 knife          7         16      0.655      0.125      0.122     0.0873
+                 spoon          5         22      0.356      0.136      0.217     0.0809
+                  bowl          9         28      0.384      0.536       0.51      0.373
+                banana          1          1      0.125          1      0.166      0.149
+              sandwich          2          2      0.158        0.5       0.19      0.146
+                orange          1          4          0          0       0.31      0.134
+              broccoli          4         11          1          0      0.016     0.0144
+                carrot          3         24      0.701     0.0833      0.287      0.151
+               hot dog          1          2      0.642        0.5      0.828      0.763
+                 pizza          5          5      0.663      0.396      0.577      0.421
+                 donut          2         14      0.449     0.0714       0.31      0.234
+                  cake          4          4      0.325          1      0.745       0.69
+                 chair          9         35      0.299      0.429      0.257      0.164
+                 couch          5          6          1          0      0.211      0.123
+          potted plant          9         14      0.481      0.286      0.345      0.222
+                   bed          3          3     0.0711      0.333      0.191     0.0831
+          dining table         10         13      0.341      0.615      0.448      0.339
+                toilet          2          2      0.154        0.5      0.496      0.496
+                    tv          2          2          0          0       0.12      0.108
+                laptop          2          3          1          0      0.669      0.602
+                 mouse          2          2          1          0          0          0
+                remote          5          8       0.67        0.5      0.508      0.412
+            cell phone          5          8          0          0     0.0289     0.0108
+             microwave          3          3          0          0      0.083     0.0415
+                  oven          5          5          0          0     0.0177     0.0131
+                  sink          4          6      0.196      0.333      0.135      0.089
+          refrigerator          5          5       0.55        0.6        0.6       0.44
+                  book          6         29          1     0.0607      0.225      0.141
+                 clock          8          9      0.498      0.889      0.875      0.717
+                  vase          2          2      0.396        0.5      0.513      0.457
+              scissors          1          1          0          0     0.0144    0.00288
+            teddy bear          6         21      0.224     0.0476      0.114     0.0693
+            toothbrush          2          5          1          0      0.364      0.161
+Speed: 0.2ms preprocess, 4.0ms inference, 0.0ms loss, 1.4ms postprocess per image

@@ -1,0 +1,482 @@
+2024-06-14 18:49:44,544 INFO    StreamThr :14196 [internal.py:wandb_internal():85] W&B internal server running at pid: 14196, started at: 2024-06-14 18:49:44.544670
+2024-06-14 18:49:44,545 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status
+2024-06-14 18:49:44,549 INFO    WriterThread:14196 [datastore.py:open_for_write():87] open: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\run-l0vy6fu2.wandb
+2024-06-14 18:49:44,550 DEBUG   SenderThread:14196 [sender.py:send():379] send: header
+2024-06-14 18:49:44,724 DEBUG   SenderThread:14196 [sender.py:send():379] send: run
+2024-06-14 18:49:45,380 INFO    SenderThread:14196 [dir_watcher.py:__init__():211] watching files in: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files
+2024-06-14 18:49:45,381 INFO    SenderThread:14196 [sender.py:_start_run_threads():1188] run started: l0vy6fu2 with start time 1718405384.545671
+2024-06-14 18:49:45,390 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: check_version
+2024-06-14 18:49:45,390 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: check_version
+2024-06-14 18:49:45,875 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: run_start
+2024-06-14 18:49:45,900 DEBUG   HandlerThread:14196 [system_info.py:__init__():26] System info init
+2024-06-14 18:49:45,900 DEBUG   HandlerThread:14196 [system_info.py:__init__():41] System info init done
+2024-06-14 18:49:45,900 INFO    HandlerThread:14196 [system_monitor.py:start():194] Starting system monitor
+2024-06-14 18:49:45,900 INFO    SystemMonitor:14196 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-14 18:49:45,900 INFO    HandlerThread:14196 [system_monitor.py:probe():214] Collecting system info
+2024-06-14 18:49:45,906 INFO    SystemMonitor:14196 [interfaces.py:start():188] Started cpu monitoring
+2024-06-14 18:49:45,906 INFO    SystemMonitor:14196 [interfaces.py:start():188] Started disk monitoring
+2024-06-14 18:49:45,907 INFO    SystemMonitor:14196 [interfaces.py:start():188] Started gpu monitoring
+2024-06-14 18:49:45,913 INFO    SystemMonitor:14196 [interfaces.py:start():188] Started memory monitoring
+2024-06-14 18:49:45,929 DEBUG   HandlerThread:14196 [system_info.py:probe():152] Probing system
+2024-06-14 18:49:45,929 INFO    SystemMonitor:14196 [interfaces.py:start():188] Started network monitoring
+2024-06-14 18:49:45,932 DEBUG   HandlerThread:14196 [system_info.py:_probe_git():137] Probing git
+2024-06-14 18:49:46,021 DEBUG   HandlerThread:14196 [system_info.py:_probe_git():145] Probing git done
+2024-06-14 18:49:46,021 DEBUG   HandlerThread:14196 [system_info.py:probe():200] Probing system done
+2024-06-14 18:49:46,021 DEBUG   HandlerThread:14196 [system_monitor.py:probe():223] {'os': 'Windows-11-10.0.22631-SP0', 'python': '3.12.2', 'heartbeatAt': '2024-06-14T22:49:45.929238', 'startedAt': '2024-06-14T22:49:44.537633', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'B:\\GitHub\\ultralytics\\ultralytics\\ultralytics\\TestYolo.py', 'codePathLocal': 'TestYolo.py', 'codePath': 'ultralytics\\TestYolo.py', 'git': {'remote': 'https://github.com/Logan-Cole-Luna/ultralytics.git', 'commit': '6b65e357ddc04cd00d57f90682df6d77fe13d0b3'}, 'email': 'LoganLambeth8@gmail.com', 'root': 'B:/GitHub/ultralytics/ultralytics', 'host': 'DESKTOP-JA3B0L7', 'username': 'Logan', 'executable': 'C:\\Users\\Logan\\AppData\\Local\\Programs\\Python\\Python312\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3593.0, 'min': 0.0, 'max': 3593.0}, 'cpu_freq_per_core': [{'current': 3593.0, 'min': 0.0, 'max': 3593.0}], 'disk': {'/': {'total': 476.93847274780273, 'used': 380.7977638244629}}, 'gpu': 'NVIDIA GeForce RTX 3060', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060', 'memory_total': 12884901888}], 'memory': {'total': 63.94804763793945}}
+2024-06-14 18:49:46,021 INFO    HandlerThread:14196 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-14 18:49:46,021 INFO    HandlerThread:14196 [system_monitor.py:probe():227] Publishing system info
+2024-06-14 18:49:46,022 INFO    HandlerThread:14196 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-14 18:49:46,027 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:49:46,027 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-06-14 18:49:46,125 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-14 18:49:46,125 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: python_packages
+2024-06-14 18:49:46,125 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-14 18:49:46,126 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: stop_status
+2024-06-14 18:49:46,126 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:46,384 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\wandb-metadata.json
+2024-06-14 18:49:46,385 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\requirements.txt
+2024-06-14 18:49:46,953 DEBUG   SenderThread:14196 [sender.py:send():379] send: telemetry
+2024-06-14 18:49:47,203 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:47,309 INFO    wandb-upload_0:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\lvq8qb4j-wandb-metadata.json
+2024-06-14 18:49:47,397 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:49:47,888 DEBUG   SenderThread:14196 [sender.py:send():379] send: telemetry
+2024-06-14 18:49:48,215 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:49,219 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:49,406 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:49:49,761 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:49:50,222 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:51,233 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:51,420 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:49:52,238 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:53,238 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:54,249 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:55,146 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:49:55,253 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:56,269 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:57,275 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:58,289 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:49:59,291 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:00,154 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:50:00,306 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:01,139 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-14 18:50:01,139 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: stop_status
+2024-06-14 18:50:01,309 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:02,319 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:03,322 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:04,328 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:05,315 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:50:05,330 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:06,336 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:07,342 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:08,356 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:09,365 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:09,536 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:50:10,371 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:10,945 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:50:11,376 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:12,383 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:13,387 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:14,393 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:15,404 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:16,142 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-14 18:50:16,142 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: stop_status
+2024-06-14 18:50:16,202 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:50:16,406 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:16,575 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\config.yaml
+2024-06-14 18:50:17,420 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:18,428 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:19,434 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:20,439 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:21,442 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:22,183 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:50:22,448 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:23,453 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:24,468 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:25,474 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:26,489 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:27,199 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:50:27,494 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:28,500 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:29,514 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:30,522 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:31,153 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-14 18:50:31,153 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: stop_status
+2024-06-14 18:50:31,537 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:32,299 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:50:32,547 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:33,552 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:34,553 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:35,565 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:36,621 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:37,554 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:50:37,601 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:38,597 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:39,614 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:39,757 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:50:40,628 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:41,635 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:41,780 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:50:42,626 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:50:42,644 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:42,786 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:50:43,360 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:43,360 DEBUG   SenderThread:14196 [sender.py:send():379] send: telemetry
+2024-06-14 18:50:43,360 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:43,654 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:44,661 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:44,804 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:50:45,667 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:45,933 DEBUG   SystemMonitor:14196 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-14 18:50:45,933 DEBUG   SenderThread:14196 [sender.py:send():379] send: stats
+2024-06-14 18:50:46,153 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-14 18:50:46,153 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: stop_status
+2024-06-14 18:50:46,678 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:46,820 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:50:47,695 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:48,262 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:50:48,705 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:49,715 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:49,724 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:49,841 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\config.yaml
+2024-06-14 18:50:49,841 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:50:50,213 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,213 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,213 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\labels_1_e4b425b9f10a3d748c16.jpg with policy now
+2024-06-14 18:50:50,230 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,230 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,230 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\train_batch0_1_250792665c414b98e18a.jpg with policy now
+2024-06-14 18:50:50,246 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,246 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,246 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\train_batch1_1_9b0481117c7e289c0c04.jpg with policy now
+2024-06-14 18:50:50,262 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,262 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,262 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\train_batch2_1_a74c528c55af637bed78.jpg with policy now
+2024-06-14 18:50:50,281 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,281 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,281 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\val_batch0_pred_1_23c156311281fe5546d6.jpg with policy now
+2024-06-14 18:50:50,299 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,299 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\val_batch0_labels_1_1f72b7124cb0e7067578.jpg with policy now
+2024-06-14 18:50:50,299 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,318 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,318 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\val_batch1_pred_1_f8dedcb4e3da7335c54d.jpg with policy now
+2024-06-14 18:50:50,318 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,339 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,339 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,339 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\val_batch1_labels_1_5bed7ee86624cc0d91a3.jpg with policy now
+2024-06-14 18:50:50,358 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,358 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,358 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\val_batch2_pred_1_6349be67a68fbf7f4f04.jpg with policy now
+2024-06-14 18:50:50,377 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,378 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,378 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\val_batch2_labels_1_d992cfe574273dc35bdc.jpg with policy now
+2024-06-14 18:50:50,430 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,430 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\PR_curve_1_a21e30d034b1dd246d17.png with policy now
+2024-06-14 18:50:50,430 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,489 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,489 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,489 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\F1_curve_1_9aea397ae8123358d451.png with policy now
+2024-06-14 18:50:50,543 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,543 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,543 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\P_curve_1_6e4160f0efbd7868d18a.png with policy now
+2024-06-14 18:50:50,594 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,594 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,595 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\R_curve_1_b4ba57eb292bf15142f1.png with policy now
+2024-06-14 18:50:50,691 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,691 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\confusion_matrix_normalized_1_1cb2eb67f46df7ed8178.png with policy now
+2024-06-14 18:50:50,692 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,724 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:50:50,797 DEBUG   SenderThread:14196 [sender.py:send():379] send: files
+2024-06-14 18:50:50,797 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file media\images\confusion_matrix_1_ceb20d6b8bdd5a94a68c.png with policy now
+2024-06-14 18:50:50,797 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:50,843 INFO    wandb-upload_0:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\d4csok2e-media/images/labels_1_e4b425b9f10a3d748c16.jpg
+2024-06-14 18:50:50,852 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\val_batch2_pred_1_6349be67a68fbf7f4f04.jpg
+2024-06-14 18:50:50,853 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\train_batch2_1_a74c528c55af637bed78.jpg
+2024-06-14 18:50:50,854 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\val_batch1_pred_1_f8dedcb4e3da7335c54d.jpg
+2024-06-14 18:50:50,855 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\train_batch0_1_250792665c414b98e18a.jpg
+2024-06-14 18:50:50,856 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\val_batch1_labels_1_5bed7ee86624cc0d91a3.jpg
+2024-06-14 18:50:50,856 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\R_curve_1_b4ba57eb292bf15142f1.png
+2024-06-14 18:50:50,857 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\val_batch0_labels_1_1f72b7124cb0e7067578.jpg
+2024-06-14 18:50:50,858 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\train_batch1_1_9b0481117c7e289c0c04.jpg
+2024-06-14 18:50:50,859 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\P_curve_1_6e4160f0efbd7868d18a.png
+2024-06-14 18:50:50,859 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\confusion_matrix_1_ceb20d6b8bdd5a94a68c.png
+2024-06-14 18:50:50,860 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\labels_1_e4b425b9f10a3d748c16.jpg
+2024-06-14 18:50:50,861 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\confusion_matrix_normalized_1_1cb2eb67f46df7ed8178.png
+2024-06-14 18:50:50,862 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\val_batch2_labels_1_d992cfe574273dc35bdc.jpg
+2024-06-14 18:50:50,863 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\F1_curve_1_9aea397ae8123358d451.png
+2024-06-14 18:50:50,864 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\val_batch0_pred_1_23c156311281fe5546d6.jpg
+2024-06-14 18:50:50,865 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\PR_curve_1_a21e30d034b1dd246d17.png
+2024-06-14 18:50:50,866 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images
+2024-06-14 18:50:50,866 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media
+2024-06-14 18:50:51,056 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-14 18:50:51,614 DEBUG   SenderThread:14196 [sender.py:send():379] send: exit
+2024-06-14 18:50:51,614 INFO    SenderThread:14196 [sender.py:send_exit():586] handling exit code: 1
+2024-06-14 18:50:51,614 INFO    SenderThread:14196 [sender.py:send_exit():588] handling runtime: 65
+2024-06-14 18:50:51,615 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-14 18:50:51,617 INFO    SenderThread:14196 [sender.py:send_exit():594] send defer
+2024-06-14 18:50:51,617 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:50:51,617 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 0
+2024-06-14 18:50:51,618 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:50:51,618 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-06-14 18:50:51,618 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 1
+2024-06-14 18:50:51,618 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:50:51,618 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 1
+2024-06-14 18:50:51,618 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:50:51,618 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-06-14 18:50:51,618 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 2
+2024-06-14 18:50:51,618 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:50:51,618 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 2
+2024-06-14 18:50:51,618 INFO    HandlerThread:14196 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-14 18:50:51,619 DEBUG   SystemMonitor:14196 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-14 18:50:51,619 DEBUG   SystemMonitor:14196 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-14 18:50:51,629 INFO    HandlerThread:14196 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-14 18:50:51,629 INFO    HandlerThread:14196 [interfaces.py:finish():200] Joined disk monitor
+2024-06-14 18:50:51,693 INFO    HandlerThread:14196 [interfaces.py:finish():200] Joined gpu monitor
+2024-06-14 18:50:51,694 INFO    HandlerThread:14196 [interfaces.py:finish():200] Joined memory monitor
+2024-06-14 18:50:51,694 INFO    HandlerThread:14196 [interfaces.py:finish():200] Joined network monitor
+2024-06-14 18:50:51,694 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:50:51,694 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-06-14 18:50:51,694 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 3
+2024-06-14 18:50:51,694 DEBUG   SenderThread:14196 [sender.py:send():379] send: stats
+2024-06-14 18:50:51,695 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:50:51,695 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 3
+2024-06-14 18:50:51,696 DEBUG   SenderThread:14196 [sender.py:send():379] send: history
+2024-06-14 18:50:51,697 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: summary_record
+2024-06-14 18:50:51,698 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-14 18:50:51,698 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:50:51,698 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-06-14 18:50:51,698 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 4
+2024-06-14 18:50:51,698 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:50:51,698 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 4
+2024-06-14 18:50:51,698 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:50:51,699 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-06-14 18:50:51,699 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 5
+2024-06-14 18:50:51,699 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:50:51,699 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 5
+2024-06-14 18:50:51,700 DEBUG   SenderThread:14196 [sender.py:send():379] send: summary
+2024-06-14 18:50:51,701 INFO    SenderThread:14196 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-14 18:50:51,701 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:50:51,701 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-06-14 18:50:51,701 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 6
+2024-06-14 18:50:51,701 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:50:51,702 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 6
+2024-06-14 18:50:51,702 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:50:51,702 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-06-14 18:50:51,702 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 7
+2024-06-14 18:50:51,702 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:50:51,702 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:50:51,702 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 7
+2024-06-14 18:50:51,702 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:50:51,703 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-06-14 18:50:51,860 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\wandb-summary.json
+2024-06-14 18:50:52,616 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:50:52,868 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:50:53,618 INFO    wandb-upload_0:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\meuolff4-media/images/labels_1_e4b425b9f10a3d748c16.jpg
+2024-06-14 18:50:53,873 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:50:54,788 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 8
+2024-06-14 18:50:54,788 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:50:54,788 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:50:54,788 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 8
+2024-06-14 18:50:54,789 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:50:54,789 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-06-14 18:50:54,789 INFO    SenderThread:14196 [job_builder.py:build():440] Attempting to build job artifact
+2024-06-14 18:50:54,791 INFO    SenderThread:14196 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-06-14 18:50:54,882 INFO    Thread-16 :14196 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:50:55,132 INFO    SenderThread:14196 [job_builder.py:build():545] adding wandb-job metadata file
+2024-06-14 18:50:55,146 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 9
+2024-06-14 18:50:55,146 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:50:55,146 DEBUG   SenderThread:14196 [sender.py:send():379] send: artifact
+2024-06-14 18:50:55,146 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 9
+2024-06-14 18:50:55,189 INFO    wandb-upload_15:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\ev9wxjr7-media/images/confusion_matrix_1_ceb20d6b8bdd5a94a68c.png
+2024-06-14 18:50:55,637 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:50:57,294 INFO    wandb-upload_1:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\p2rubudv-media/images/train_batch0_1_250792665c414b98e18a.jpg
+2024-06-14 18:50:57,861 INFO    SenderThread:14196 [sender.py:send_artifact():1530] sent artifact job-https___github.com_Logan-Cole-Luna_ultralytics.git_ultralytics_TestYolo.py - {'id': 'QXJ0aWZhY3Q6ODc1ODgxNTIz', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE4OTYyMDk5NA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODc2MDc5MjM5', 'versionIndex': 20}}}
+2024-06-14 18:50:57,861 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:50:57,861 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-06-14 18:50:57,861 INFO    SenderThread:14196 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-14 18:50:57,906 INFO    SenderThread:14196 [dir_watcher.py:finish():388] scan: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files
+2024-06-14 18:50:57,906 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\config.yaml config.yaml
+2024-06-14 18:50:57,906 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log output.log
+2024-06-14 18:50:57,908 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\requirements.txt requirements.txt
+2024-06-14 18:50:57,909 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\wandb-metadata.json wandb-metadata.json
+2024-06-14 18:50:57,909 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\wandb-summary.json wandb-summary.json
+2024-06-14 18:50:57,912 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\confusion_matrix_1_ceb20d6b8bdd5a94a68c.png media/images/confusion_matrix_1_ceb20d6b8bdd5a94a68c.png
+2024-06-14 18:50:57,912 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\confusion_matrix_normalized_1_1cb2eb67f46df7ed8178.png media/images/confusion_matrix_normalized_1_1cb2eb67f46df7ed8178.png
+2024-06-14 18:50:57,912 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\F1_curve_1_9aea397ae8123358d451.png media/images/F1_curve_1_9aea397ae8123358d451.png
+2024-06-14 18:50:57,913 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\labels_1_e4b425b9f10a3d748c16.jpg media/images/labels_1_e4b425b9f10a3d748c16.jpg
+2024-06-14 18:50:57,913 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\PR_curve_1_a21e30d034b1dd246d17.png media/images/PR_curve_1_a21e30d034b1dd246d17.png
+2024-06-14 18:50:57,913 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\P_curve_1_6e4160f0efbd7868d18a.png media/images/P_curve_1_6e4160f0efbd7868d18a.png
+2024-06-14 18:50:57,913 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\R_curve_1_b4ba57eb292bf15142f1.png media/images/R_curve_1_b4ba57eb292bf15142f1.png
+2024-06-14 18:50:57,913 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\train_batch0_1_250792665c414b98e18a.jpg media/images/train_batch0_1_250792665c414b98e18a.jpg
+2024-06-14 18:50:57,913 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\train_batch1_1_9b0481117c7e289c0c04.jpg media/images/train_batch1_1_9b0481117c7e289c0c04.jpg
+2024-06-14 18:50:57,913 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\train_batch2_1_a74c528c55af637bed78.jpg media/images/train_batch2_1_a74c528c55af637bed78.jpg
+2024-06-14 18:50:57,913 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\val_batch0_labels_1_1f72b7124cb0e7067578.jpg media/images/val_batch0_labels_1_1f72b7124cb0e7067578.jpg
+2024-06-14 18:50:57,913 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\val_batch0_pred_1_23c156311281fe5546d6.jpg media/images/val_batch0_pred_1_23c156311281fe5546d6.jpg
+2024-06-14 18:50:57,914 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\val_batch1_labels_1_5bed7ee86624cc0d91a3.jpg media/images/val_batch1_labels_1_5bed7ee86624cc0d91a3.jpg
+2024-06-14 18:50:57,914 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\val_batch1_pred_1_f8dedcb4e3da7335c54d.jpg media/images/val_batch1_pred_1_f8dedcb4e3da7335c54d.jpg
+2024-06-14 18:50:57,914 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\val_batch2_labels_1_d992cfe574273dc35bdc.jpg media/images/val_batch2_labels_1_d992cfe574273dc35bdc.jpg
+2024-06-14 18:50:57,914 INFO    SenderThread:14196 [dir_watcher.py:finish():402] scan save: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\media\images\val_batch2_pred_1_6349be67a68fbf7f4f04.jpg media/images/val_batch2_pred_1_6349be67a68fbf7f4f04.jpg
+2024-06-14 18:50:57,914 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 10
+2024-06-14 18:50:57,914 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:50:57,914 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:50:57,914 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 10
+2024-06-14 18:50:57,914 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:50:57,914 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-06-14 18:50:57,914 INFO    SenderThread:14196 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-14 18:50:58,170 INFO    wandb-upload_5:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\8omt56ja-media/images/val_batch0_labels_1_1f72b7124cb0e7067578.jpg
+2024-06-14 18:50:58,207 INFO    wandb-upload_10:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\fmqax02c-media/images/PR_curve_1_a21e30d034b1dd246d17.png
+2024-06-14 18:50:58,236 INFO    wandb-upload_0:14196 [upload_job.py:push():130] Uploaded file B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\config.yaml
+2024-06-14 18:50:58,664 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:50:58,664 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:50:58,848 INFO    wandb-upload_16:14196 [upload_job.py:push():130] Uploaded file B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\wandb-summary.json
+2024-06-14 18:50:58,868 INFO    wandb-upload_1:14196 [upload_job.py:push():130] Uploaded file B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\output.log
+2024-06-14 18:50:59,080 INFO    wandb-upload_4:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\yraqngdh-media/images/val_batch0_pred_1_23c156311281fe5546d6.jpg
+2024-06-14 18:50:59,333 INFO    wandb-upload_15:14196 [upload_job.py:push():130] Uploaded file B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\files\requirements.txt
+2024-06-14 18:50:59,497 INFO    wandb-upload_9:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\eld0jazm-media/images/val_batch2_labels_1_d992cfe574273dc35bdc.jpg
+2024-06-14 18:50:59,679 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:50:59,679 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:00,278 INFO    wandb-upload_2:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\65pyfd1x-media/images/train_batch1_1_9b0481117c7e289c0c04.jpg
+2024-06-14 18:51:00,404 INFO    wandb-upload_7:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\o8x6hjjo-media/images/val_batch1_labels_1_5bed7ee86624cc0d91a3.jpg
+2024-06-14 18:51:00,684 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:51:00,684 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:00,684 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:01,686 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:01,686 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:02,687 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:02,687 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:03,184 INFO    wandb-upload_3:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\o0gu342m-media/images/train_batch2_1_a74c528c55af637bed78.jpg
+2024-06-14 18:51:03,702 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:03,702 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:03,761 INFO    wandb-upload_13:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\7c5xq6rt-media/images/R_curve_1_b4ba57eb292bf15142f1.png
+2024-06-14 18:51:04,705 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:04,705 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:05,718 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:05,718 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:51:05,718 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:06,468 INFO    wandb-upload_10:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\vcoybnpk-media/images/val_batch0_labels_1_1f72b7124cb0e7067578.jpg
+2024-06-14 18:51:06,727 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:06,727 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:07,021 INFO    wandb-upload_15:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\jg9frz26-media/images/val_batch0_pred_1_23c156311281fe5546d6.jpg
+2024-06-14 18:51:07,729 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:07,729 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:08,405 INFO    wandb-upload_14:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\8j63gzpu-media/images/confusion_matrix_normalized_1_1cb2eb67f46df7ed8178.png
+2024-06-14 18:51:08,564 INFO    wandb-upload_6:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\bzv6b96k-media/images/val_batch1_pred_1_f8dedcb4e3da7335c54d.jpg
+2024-06-14 18:51:08,739 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:08,739 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:09,739 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:09,739 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:09,763 INFO    wandb-upload_1:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\ll884jgz-media/images/val_batch2_labels_1_d992cfe574273dc35bdc.jpg
+2024-06-14 18:51:10,749 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:10,749 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:51:10,749 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:11,753 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:11,753 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:12,755 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:12,755 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:12,765 INFO    wandb-upload_11:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\0rt9bxk4-media/images/F1_curve_1_9aea397ae8123358d451.png
+2024-06-14 18:51:12,916 INFO    wandb-upload_4:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\m32bcw8i-media/images/train_batch2_1_a74c528c55af637bed78.jpg
+2024-06-14 18:51:13,763 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:13,763 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:14,764 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:14,764 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:15,778 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:51:15,778 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:15,778 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:15,838 INFO    wandb-upload_8:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\551g0457-media/images/val_batch2_pred_1_6349be67a68fbf7f4f04.jpg
+2024-06-14 18:51:16,786 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:16,786 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:17,698 INFO    wandb-upload_5:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\1jkuokxe-media/images/train_batch0_1_250792665c414b98e18a.jpg
+2024-06-14 18:51:17,799 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:17,799 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:18,171 INFO    wandb-upload_3:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\dtky6arj-media/images/val_batch1_labels_1_5bed7ee86624cc0d91a3.jpg
+2024-06-14 18:51:18,808 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:18,808 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:19,690 INFO    wandb-upload_7:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\o0rz2v74-media/images/confusion_matrix_normalized_1_1cb2eb67f46df7ed8178.png
+2024-06-14 18:51:19,810 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:19,810 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:20,484 INFO    wandb-upload_10:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\074452ot-media/images/train_batch1_1_9b0481117c7e289c0c04.jpg
+2024-06-14 18:51:20,662 INFO    wandb-upload_16:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\dld04isr-media/images/confusion_matrix_1_ceb20d6b8bdd5a94a68c.png
+2024-06-14 18:51:20,813 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:51:20,813 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:20,813 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:21,819 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:21,819 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:22,385 INFO    wandb-upload_13:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\0zbwfpw6-media/images/R_curve_1_b4ba57eb292bf15142f1.png
+2024-06-14 18:51:22,820 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:22,820 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:23,068 ERROR   wandb-upload_12:14196 [internal_api.py:upload_file():2845] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/loganluna/YOLOv8/l0vy6fu2/media/images/P_curve_1_6e4160f0efbd7868d18a.png?Expires=1718491852&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=TuBQZ16M3VjT2QbUa8DyPbH%2FPO0yQCCd02Rd1YYSAmr2LQlF6gTf6QxoB9RDD9copS1f1qcXnUTIq3eznNswiQQEiW03fCpI8Ku4PGPAZlJDS%2B7D0AwROyRBdFW7V32Npu4M4rm2lztM6DShDfKc%2FXD%2BJJF5e8rDWCCtmAeqHxS%2BnLX85fXvjagXO2jG2IaCc%2FN%2BV%2Bv97wLQDLicETAOrdqvF3wACSDVusQVDD9F5US%2ByX%2BIswA3%2BBDtRT8ckHQPdnQE6sv1d0IQA1C1qPi9M3n%2B06oaPOc6D0SyFfHjwR5ARt0NNsom9VZCAw4LZ1XUPopmMKirfsI%2FaEaAlZ9OUA%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/loganluna/YOLOv8/l0vy6fu2/media/images/P_curve_1_6e4160f0efbd7868d18a.png?Expires=1718491852&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=TuBQZ16M3VjT2QbUa8DyPbH%2FPO0yQCCd02Rd1YYSAmr2LQlF6gTf6QxoB9RDD9copS1f1qcXnUTIq3eznNswiQQEiW03fCpI8Ku4PGPAZlJDS%2B7D0AwROyRBdFW7V32Npu4M4rm2lztM6DShDfKc%2FXD%2BJJF5e8rDWCCtmAeqHxS%2BnLX85fXvjagXO2jG2IaCc%2FN%2BV%2Bv97wLQDLicETAOrdqvF3wACSDVusQVDD9F5US%2ByX%2BIswA3%2BBDtRT8ckHQPdnQE6sv1d0IQA1C1qPi9M3n%2B06oaPOc6D0SyFfHjwR5ARt0NNsom9VZCAw4LZ1XUPopmMKirfsI%2FaEaAlZ9OUA%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2406)')))
+2024-06-14 18:51:23,068 ERROR   wandb-upload_12:14196 [internal_api.py:upload_file():2847] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '611884'}
+2024-06-14 18:51:23,068 ERROR   wandb-upload_9:14196 [internal_api.py:upload_file():2845] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/loganluna/YOLOv8/l0vy6fu2/media/images/PR_curve_1_a21e30d034b1dd246d17.png?Expires=1718491863&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=DJdThYTsi8CuGfXTxQIv6w9SkYQ%2Fr5UCXSmm8Ph64H%2BJFnCODy%2F1i2HNvwpH1CFZ1jWE5qR3kdXvG3uZJxvs0okUcu3GxIgYNmPcnmcgFPqr67%2FYft9UR%2BT0TsZ8oSjWZaEtkbuiioMj2wgmuJsZ2bCFRpq1136wX9APO3%2BFIIfJeIg5LuRhZvkUz8K2p72t4sFMwwOrNB65DZU98O1Hbxwvg3hhFbkhGBdRrtLEKf2nMgIvcVq%2B%2FTsDc2ArXblL1rxZusWBJwhwas9Su9hyFw%2BmyfNHlzeM3MgHEM1aIoqe3AVFiaOjJMC0NQYFA9yyaUIZRcjZubS0NQN%2FOwSGsQ%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/loganluna/YOLOv8/l0vy6fu2/media/images/PR_curve_1_a21e30d034b1dd246d17.png?Expires=1718491863&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=DJdThYTsi8CuGfXTxQIv6w9SkYQ%2Fr5UCXSmm8Ph64H%2BJFnCODy%2F1i2HNvwpH1CFZ1jWE5qR3kdXvG3uZJxvs0okUcu3GxIgYNmPcnmcgFPqr67%2FYft9UR%2BT0TsZ8oSjWZaEtkbuiioMj2wgmuJsZ2bCFRpq1136wX9APO3%2BFIIfJeIg5LuRhZvkUz8K2p72t4sFMwwOrNB65DZU98O1Hbxwvg3hhFbkhGBdRrtLEKf2nMgIvcVq%2B%2FTsDc2ArXblL1rxZusWBJwhwas9Su9hyFw%2BmyfNHlzeM3MgHEM1aIoqe3AVFiaOjJMC0NQYFA9yyaUIZRcjZubS0NQN%2FOwSGsQ%3D%3D (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2406)')))
+2024-06-14 18:51:23,068 ERROR   wandb-upload_12:14196 [internal_api.py:upload_file():2849] upload_file response body: 
+2024-06-14 18:51:23,069 ERROR   wandb-upload_9:14196 [internal_api.py:upload_file():2847] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '205427'}
+2024-06-14 18:51:23,069 ERROR   wandb-upload_9:14196 [internal_api.py:upload_file():2849] upload_file response body: 
+2024-06-14 18:51:23,820 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:23,820 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:24,771 INFO    wandb-upload_1:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\1hijyil4-media/images/val_batch2_pred_1_6349be67a68fbf7f4f04.jpg
+2024-06-14 18:51:24,826 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:24,826 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:25,833 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:51:25,833 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:25,833 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:26,837 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:26,837 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:27,841 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:27,841 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:28,168 INFO    wandb-upload_11:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\j3si23pa-media/images/val_batch1_pred_1_f8dedcb4e3da7335c54d.jpg
+2024-06-14 18:51:28,845 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:28,845 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:29,192 INFO    wandb-upload_6:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\xayuc4ne-media/images/F1_curve_1_9aea397ae8123358d451.png
+2024-06-14 18:51:29,728 INFO    wandb-upload_12:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\foqd8at6-media/images/P_curve_1_6e4160f0efbd7868d18a.png
+2024-06-14 18:51:29,853 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:29,853 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:30,880 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: status_report
+2024-06-14 18:51:30,881 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:30,909 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:31,292 INFO    wandb-upload_9:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\3kpgt19y-media/images/PR_curve_1_a21e30d034b1dd246d17.png
+2024-06-14 18:51:31,925 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:31,925 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:32,928 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:32,928 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:32,970 INFO    wandb-upload_4:14196 [upload_job.py:push():130] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmp0z4eufa3wandb\wo38jozp-media/images/P_curve_1_6e4160f0efbd7868d18a.png
+2024-06-14 18:51:33,177 INFO    Thread-15 (_thread_body):14196 [sender.py:transition_state():614] send defer: 11
+2024-06-14 18:51:33,178 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:51:33,178 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 11
+2024-06-14 18:51:33,179 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:51:33,179 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-06-14 18:51:33,179 INFO    SenderThread:14196 [file_pusher.py:join():175] waiting for file pusher
+2024-06-14 18:51:33,201 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 12
+2024-06-14 18:51:33,201 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:51:33,201 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 12
+2024-06-14 18:51:33,201 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:51:33,201 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-06-14 18:51:33,201 INFO    SenderThread:14196 [file_stream.py:finish():601] file stream finish called
+2024-06-14 18:51:33,394 INFO    SenderThread:14196 [file_stream.py:finish():605] file stream finish is done
+2024-06-14 18:51:33,394 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 13
+2024-06-14 18:51:33,394 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:51:33,394 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 13
+2024-06-14 18:51:33,395 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:51:33,395 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-06-14 18:51:33,395 INFO    SenderThread:14196 [sender.py:transition_state():614] send defer: 14
+2024-06-14 18:51:33,395 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: defer
+2024-06-14 18:51:33,395 DEBUG   SenderThread:14196 [sender.py:send():379] send: final
+2024-06-14 18:51:33,395 INFO    HandlerThread:14196 [handler.py:handle_request_defer():184] handle defer: 14
+2024-06-14 18:51:33,395 DEBUG   SenderThread:14196 [sender.py:send():379] send: footer
+2024-06-14 18:51:33,395 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: defer
+2024-06-14 18:51:33,395 INFO    SenderThread:14196 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-06-14 18:51:33,396 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:33,396 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: server_info
+2024-06-14 18:51:33,396 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-14 18:51:33,396 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:33,396 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: get_summary
+2024-06-14 18:51:33,397 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: server_info
+2024-06-14 18:51:33,397 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: sampled_history
+2024-06-14 18:51:33,398 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-14 18:51:33,472 DEBUG   SenderThread:14196 [sender.py:send_request():406] send_request: poll_exit
+2024-06-14 18:51:33,472 INFO    MainThread:14196 [wandb_run.py:_footer_history_summary_info():4008] rendering history
+2024-06-14 18:51:33,472 INFO    MainThread:14196 [wandb_run.py:_footer_history_summary_info():4040] rendering summary
+2024-06-14 18:51:33,472 INFO    MainThread:14196 [wandb_run.py:_footer_sync_info():3967] logging synced files
+2024-06-14 18:51:33,472 DEBUG   HandlerThread:14196 [handler.py:handle_request():158] handle_request: shutdown
+2024-06-14 18:51:33,472 INFO    HandlerThread:14196 [handler.py:finish():882] shutting down handler
+2024-06-14 18:51:34,399 INFO    WriterThread:14196 [datastore.py:close():296] close: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240614_184944-l0vy6fu2\run-l0vy6fu2.wandb
+2024-06-14 18:51:34,481 INFO    SenderThread:14196 [sender.py:finish():1608] shutting down sender
+2024-06-14 18:51:34,481 INFO    SenderThread:14196 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-14 18:51:34,481 INFO    SenderThread:14196 [file_pusher.py:join():175] waiting for file pusher

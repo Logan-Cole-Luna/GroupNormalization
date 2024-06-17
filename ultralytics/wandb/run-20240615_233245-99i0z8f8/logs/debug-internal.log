@@ -1,0 +1,5 @@
+2024-06-15 23:32:45,939 INFO    StreamThr :10964 [internal.py:wandb_internal():85] W&B internal server running at pid: 10964, started at: 2024-06-15 23:32:45.939794
+2024-06-15 23:32:45,940 DEBUG   HandlerThread:10964 [handler.py:handle_request():158] handle_request: status
+2024-06-15 23:32:45,945 INFO    WriterThread:10964 [datastore.py:open_for_write():87] open: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240615_233245-99i0z8f8\run-99i0z8f8.wandb
+2024-06-15 23:32:45,946 DEBUG   SenderThread:10964 [sender.py:send():379] send: header
+2024-06-15 23:32:46,118 DEBUG   SenderThread:10964 [sender.py:send():379] send: run

@@ -1,0 +1,932 @@
+2024-06-13 18:10:02,995 INFO    StreamThr :10408 [internal.py:wandb_internal():86] W&B internal server running at pid: 10408, started at: 2024-06-13 18:10:02.995718
+2024-06-13 18:10:03,053 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status
+2024-06-13 18:10:03,289 INFO    WriterThread:10408 [datastore.py:open_for_write():87] open: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\run-1jqw14gq.wandb
+2024-06-13 18:10:03,290 DEBUG   SenderThread:10408 [sender.py:send():379] send: header
+2024-06-13 18:10:03,587 DEBUG   SenderThread:10408 [sender.py:send():379] send: run
+2024-06-13 18:10:04,184 INFO    SenderThread:10408 [dir_watcher.py:__init__():211] watching files in: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files
+2024-06-13 18:10:04,184 INFO    SenderThread:10408 [sender.py:_start_run_threads():1124] run started: 1jqw14gq with start time 1718316603.04973
+2024-06-13 18:10:04,194 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: check_version
+2024-06-13 18:10:04,195 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: check_version
+2024-06-13 18:10:04,626 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: run_start
+2024-06-13 18:10:04,650 DEBUG   HandlerThread:10408 [system_info.py:__init__():26] System info init
+2024-06-13 18:10:04,650 DEBUG   HandlerThread:10408 [system_info.py:__init__():41] System info init done
+2024-06-13 18:10:04,650 INFO    HandlerThread:10408 [system_monitor.py:start():194] Starting system monitor
+2024-06-13 18:10:04,651 INFO    SystemMonitor:10408 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-13 18:10:04,651 INFO    HandlerThread:10408 [system_monitor.py:probe():214] Collecting system info
+2024-06-13 18:10:04,655 INFO    SystemMonitor:10408 [interfaces.py:start():190] Started cpu monitoring
+2024-06-13 18:10:04,656 INFO    SystemMonitor:10408 [interfaces.py:start():190] Started disk monitoring
+2024-06-13 18:10:04,656 INFO    SystemMonitor:10408 [interfaces.py:start():190] Started gpu monitoring
+2024-06-13 18:10:04,664 INFO    SystemMonitor:10408 [interfaces.py:start():190] Started memory monitoring
+2024-06-13 18:10:04,680 INFO    SystemMonitor:10408 [interfaces.py:start():190] Started network monitoring
+2024-06-13 18:10:04,689 DEBUG   HandlerThread:10408 [system_info.py:probe():150] Probing system
+2024-06-13 18:10:04,691 DEBUG   HandlerThread:10408 [system_info.py:_probe_git():135] Probing git
+2024-06-13 18:10:04,792 DEBUG   HandlerThread:10408 [system_info.py:_probe_git():143] Probing git done
+2024-06-13 18:10:04,792 DEBUG   HandlerThread:10408 [system_info.py:probe():198] Probing system done
+2024-06-13 18:10:04,792 DEBUG   HandlerThread:10408 [system_monitor.py:probe():223] {'os': 'Windows-11-10.0.22631-SP0', 'python': '3.12.2', 'heartbeatAt': '2024-06-13T22:10:04.689606', 'startedAt': '2024-06-13T22:10:02.956710', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'B:\\GitHub\\ultralytics\\ultralytics\\ultralytics\\TestYolo.py', 'codePathLocal': 'TestYolo.py', 'codePath': 'ultralytics\\TestYolo.py', 'git': {'remote': 'https://github.com/Logan-Cole-Luna/ultralytics.git', 'commit': 'f92bd9dea119715ced09d0b6ca6241cdadb8397b'}, 'email': 'LoganLambeth8@gmail.com', 'root': 'B:/GitHub/ultralytics/ultralytics', 'host': 'DESKTOP-JA3B0L7', 'username': 'Logan', 'executable': 'C:\\Users\\Logan\\AppData\\Local\\Programs\\Python\\Python312\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3593.0, 'min': 0.0, 'max': 3593.0}, 'cpu_freq_per_core': [{'current': 3593.0, 'min': 0.0, 'max': 3593.0}], 'disk': {'/': {'total': 476.93847274780273, 'used': 379.6693992614746}}, 'gpu': 'NVIDIA GeForce RTX 3060', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060', 'memory_total': 12884901888}], 'memory': {'total': 63.94804763793945}}
+2024-06-13 18:10:04,792 INFO    HandlerThread:10408 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-13 18:10:04,792 INFO    HandlerThread:10408 [system_monitor.py:probe():227] Publishing system info
+2024-06-13 18:10:04,793 INFO    HandlerThread:10408 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-13 18:10:04,798 DEBUG   SenderThread:10408 [sender.py:send():379] send: files
+2024-06-13 18:10:04,798 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-06-13 18:10:04,906 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: python_packages
+2024-06-13 18:10:04,906 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: python_packages
+2024-06-13 18:10:04,906 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:10:04,907 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:10:04,907 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:10:04,992 DEBUG   SenderThread:10408 [sender.py:send():379] send: telemetry
+2024-06-13 18:10:05,186 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:10:05,187 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\requirements.txt
+2024-06-13 18:10:05,187 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-metadata.json
+2024-06-13 18:10:05,366 INFO    wandb-upload_0:10408 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmpj5b1fllbwandb\dfxt8956-wandb-metadata.json
+2024-06-13 18:10:06,780 DEBUG   SenderThread:10408 [sender.py:send():379] send: telemetry
+2024-06-13 18:10:07,202 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:10:08,643 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:10:09,229 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:10:10,231 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:10:13,677 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:10:18,728 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:10:19,910 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:10:19,926 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:10:19,926 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:10:24,020 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:10:29,604 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:10:30,396 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:10:34,652 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:10:34,927 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:10:34,936 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:10:34,936 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:10:35,443 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\config.yaml
+2024-06-13 18:10:40,127 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:10:45,189 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:10:49,917 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:10:49,933 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:10:49,933 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:10:51,058 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:10:56,100 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:01,131 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:04,685 DEBUG   SystemMonitor:10408 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-13 18:11:04,685 DEBUG   SenderThread:10408 [sender.py:send():379] send: stats
+2024-06-13 18:11:04,924 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:11:04,940 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:11:04,941 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:11:05,715 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:06,243 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:06,725 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:07,739 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:08,752 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:09,078 DEBUG   SenderThread:10408 [sender.py:send():379] send: telemetry
+2024-06-13 18:11:09,079 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:09,079 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:10,766 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:11,665 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:12,784 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:12,796 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:13,324 DEBUG   SenderThread:10408 [sender.py:send():379] send: files
+2024-06-13 18:11:13,325 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file media\images\labels_1_e4b425b9f10a3d748c16.jpg with policy now
+2024-06-13 18:11:13,325 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:13,343 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:13,343 DEBUG   SenderThread:10408 [sender.py:send():379] send: files
+2024-06-13 18:11:13,343 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file media\images\train_batch0_1_250792665c414b98e18a.jpg with policy now
+2024-06-13 18:11:13,361 DEBUG   SenderThread:10408 [sender.py:send():379] send: files
+2024-06-13 18:11:13,361 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:13,361 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file media\images\train_batch1_1_9b0481117c7e289c0c04.jpg with policy now
+2024-06-13 18:11:13,382 DEBUG   SenderThread:10408 [sender.py:send():379] send: files
+2024-06-13 18:11:13,383 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:13,383 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file media\images\train_batch2_1_a74c528c55af637bed78.jpg with policy now
+2024-06-13 18:11:14,077 INFO    wandb-upload_0:10408 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmpj5b1fllbwandb\6tczvr08-media/images/labels_1_e4b425b9f10a3d748c16.jpg
+2024-06-13 18:11:14,116 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:14,117 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\media\images\train_batch2_1_a74c528c55af637bed78.jpg
+2024-06-13 18:11:14,118 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\media\images\train_batch1_1_9b0481117c7e289c0c04.jpg
+2024-06-13 18:11:14,119 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\media\images\train_batch0_1_250792665c414b98e18a.jpg
+2024-06-13 18:11:14,120 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\media\images\labels_1_e4b425b9f10a3d748c16.jpg
+2024-06-13 18:11:14,121 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\media
+2024-06-13 18:11:14,121 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\media\images
+2024-06-13 18:11:14,158 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:15,085 INFO    wandb-upload_0:10408 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmpj5b1fllbwandb\36wb9066-media/images/labels_1_e4b425b9f10a3d748c16.jpg
+2024-06-13 18:11:16,101 INFO    wandb-upload_1:10408 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmpj5b1fllbwandb\p94d1ocf-media/images/train_batch0_1_250792665c414b98e18a.jpg
+2024-06-13 18:11:16,134 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:16,688 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:17,553 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:17,557 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:17,557 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:11:17,558 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:11:17,560 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:11:17,664 INFO    wandb-upload_3:10408 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmpj5b1fllbwandb\29gcrqg9-media/images/train_batch2_1_a74c528c55af637bed78.jpg
+2024-06-13 18:11:17,973 INFO    wandb-upload_2:10408 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmpj5b1fllbwandb\ik33y2bm-media/images/train_batch1_1_9b0481117c7e289c0c04.jpg
+2024-06-13 18:11:18,155 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:18,156 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:11:19,168 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:19,413 INFO    wandb-upload_0:10408 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmpj5b1fllbwandb\cni0cd4d-media/images/train_batch0_1_250792665c414b98e18a.jpg
+2024-06-13 18:11:19,589 INFO    wandb-upload_3:10408 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmpj5b1fllbwandb\zh767fyl-media/images/train_batch2_1_a74c528c55af637bed78.jpg
+2024-06-13 18:11:19,934 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:11:19,950 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:11:19,951 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:11:20,173 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:20,259 INFO    wandb-upload_2:10408 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmpj5b1fllbwandb\55gheu4q-media/images/train_batch1_1_9b0481117c7e289c0c04.jpg
+2024-06-13 18:11:21,783 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:22,199 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:22,829 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:22,830 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:22,830 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:11:22,831 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:11:22,832 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:11:23,202 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:11:24,217 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:24,346 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:25,224 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:26,239 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:26,813 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:27,468 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:27,470 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:27,470 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:11:27,470 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:11:27,471 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:11:28,269 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:11:28,269 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:29,053 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:29,282 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:30,296 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:31,300 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:31,916 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:32,101 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:32,102 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:32,102 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:11:32,102 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:11:32,102 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:11:32,302 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:11:32,303 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:33,672 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:34,322 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:34,690 DEBUG   SenderThread:10408 [sender.py:send():379] send: stats
+2024-06-13 18:11:34,944 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:11:34,944 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:11:34,944 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:11:35,327 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:36,345 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:36,608 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:36,608 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:36,609 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:11:36,609 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:11:36,610 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:11:37,087 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:37,350 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:11:38,224 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:38,377 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\config.yaml
+2024-06-13 18:11:38,377 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:39,392 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:40,402 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:41,298 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:41,299 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:41,299 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:11:41,299 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:11:41,300 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:11:41,404 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:11:42,421 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:42,896 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:43,108 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:43,440 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:44,448 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:45,907 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:45,908 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:45,908 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:11:45,908 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:11:45,908 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:11:46,475 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:11:46,476 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:47,479 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:47,505 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:48,184 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:48,485 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:49,491 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:49,956 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:11:49,956 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:11:49,956 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:11:50,461 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:50,462 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:50,462 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:11:50,463 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:11:50,465 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:11:50,499 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:11:50,499 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:52,088 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:52,532 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:53,270 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:53,544 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:54,555 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:56,196 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:56,196 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:56,197 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:11:56,197 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:11:56,198 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:11:56,571 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:11:56,572 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:58,014 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:11:58,327 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:11:58,605 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:11:59,613 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:00,627 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:01,120 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:01,120 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:01,120 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:01,120 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:01,121 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:12:01,629 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:12:02,655 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:02,796 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:03,356 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:12:03,655 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:04,672 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:04,702 DEBUG   SenderThread:10408 [sender.py:send():379] send: stats
+2024-06-13 18:12:04,965 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:12:04,980 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:12:04,980 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:12:05,684 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:05,839 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:05,840 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:05,840 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:05,841 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:05,843 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:12:06,702 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:12:06,702 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:07,502 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:08,435 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:12:08,743 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:09,747 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:10,689 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:10,690 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:10,690 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:10,690 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:10,691 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:12:10,765 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:12:10,765 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:12,377 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:12,786 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:13,504 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:12:13,807 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:14,815 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:15,601 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:15,603 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:15,603 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:15,603 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:15,605 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:12:15,817 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:12:16,827 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:17,651 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:17,840 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:18,573 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:12:19,856 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:19,966 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:12:19,981 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:12:19,981 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:12:20,834 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:20,834 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:20,835 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:20,835 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:20,835 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:12:20,872 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:12:21,884 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:22,598 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:23,620 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:12:23,900 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:25,864 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:25,865 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:25,865 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:25,865 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:25,866 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:12:25,920 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:12:25,921 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:27,995 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:28,071 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:28,623 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:12:30,017 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:31,857 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:31,858 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:31,858 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:31,858 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:31,859 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:12:32,034 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:12:32,035 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:33,485 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:33,694 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:12:34,051 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:34,706 DEBUG   SenderThread:10408 [sender.py:send():379] send: stats
+2024-06-13 18:12:34,966 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:12:34,981 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:12:34,981 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:12:36,074 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:36,625 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:36,625 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:36,626 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:36,626 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:36,627 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:12:37,083 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:12:38,096 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:38,213 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:38,761 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:12:40,123 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:41,353 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:41,354 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:41,354 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:41,354 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:41,355 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:12:42,141 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:12:42,141 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:42,888 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:43,799 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:12:44,158 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:45,811 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:45,812 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:45,812 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:45,813 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:45,814 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:12:46,164 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:12:46,165 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:47,328 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:48,180 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:48,889 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:12:49,970 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:12:49,986 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:12:49,986 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:12:50,211 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:50,510 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:50,511 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:50,511 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:50,511 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:50,512 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:12:51,217 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:12:52,197 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:52,231 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:53,930 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:12:54,261 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:55,356 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:55,357 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:55,357 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:55,357 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:55,357 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:12:56,268 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:12:56,268 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:56,876 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:57,273 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:58,278 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:58,991 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:12:59,292 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:12:59,843 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:59,844 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:12:59,844 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:12:59,844 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:12:59,845 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:13:00,295 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:13:00,296 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:01,373 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:02,309 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:03,324 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:04,068 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:13:04,339 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:04,406 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:04,407 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:04,407 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:13:04,407 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:13:04,408 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:13:04,717 DEBUG   SenderThread:10408 [sender.py:send():379] send: stats
+2024-06-13 18:13:04,973 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:13:04,989 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:13:04,990 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:13:05,342 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:13:06,019 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:06,356 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:07,361 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:08,368 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:09,021 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:09,022 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:09,022 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:13:09,023 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:13:09,025 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:13:09,184 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:13:09,383 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:13:10,397 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:10,585 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:11,407 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:12,410 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:13,557 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:13,559 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:13,559 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:13:13,560 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:13:13,562 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:13:14,211 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:13:14,431 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:13:14,431 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:15,921 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:16,454 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:17,463 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:18,479 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:19,100 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:19,100 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:19,101 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:13:19,101 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:13:19,102 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:13:19,253 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:13:19,480 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:13:19,989 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:13:20,000 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:13:20,000 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:13:20,491 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:20,714 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:21,502 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:22,516 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:24,348 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:13:24,348 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:24,349 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:13:24,350 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:24,350 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:13:24,351 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:13:24,540 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:13:24,540 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:26,022 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:26,562 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:27,578 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:28,580 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:29,121 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:29,122 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:29,123 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:13:29,123 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:13:29,124 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:13:29,416 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:13:29,583 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:13:30,592 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:30,680 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:31,601 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:32,617 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:33,931 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:33,932 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:33,932 DEBUG   SenderThread:10408 [sender.py:send():379] send: history
+2024-06-13 18:13:33,933 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: summary_record
+2024-06-13 18:13:33,933 INFO    SenderThread:10408 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-06-13 18:13:34,559 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: status_report
+2024-06-13 18:13:34,644 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\wandb-summary.json
+2024-06-13 18:13:34,644 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:34,722 DEBUG   SenderThread:10408 [sender.py:send():379] send: stats
+2024-06-13 18:13:34,994 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:13:35,025 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: stop_status
+2024-06-13 18:13:35,025 DEBUG   SenderThread:10408 [sender.py:send_request():406] send_request: stop_status
+2024-06-13 18:13:35,553 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:36,661 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\output.log
+2024-06-13 18:13:38,569 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:38,569 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:40,071 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:13:40,078 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:42,994 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:42,995 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:44,590 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:45,096 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:13:47,692 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:47,693 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:49,315 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:49,999 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:13:52,264 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:52,264 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:53,877 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:55,153 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:13:56,895 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:56,896 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:13:57,802 INFO    SenderThread:10408 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 616, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001B3CC5C25D0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B3CC5C25D0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B3CC5C25D0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+2024-06-13 18:13:59,139 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:00,261 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:14:02,809 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:02,811 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:04,667 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:04,999 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:14:08,420 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:08,420 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:10,357 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:14:10,359 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:13,545 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:13,546 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:15,207 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:15,373 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:14:18,358 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:18,359 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:19,920 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:20,022 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:14:22,946 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:22,946 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:24,482 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:25,443 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:14:27,584 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:27,584 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:29,186 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:30,489 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:14:32,111 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:32,112 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:33,673 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:35,024 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:14:36,644 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:36,644 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:38,232 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:40,547 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:14:41,367 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:41,368 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:43,037 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:45,584 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:14:46,108 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:46,109 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:47,652 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:50,038 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:14:50,752 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:50,752 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:52,382 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:55,580 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:55,581 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:14:55,632 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:14:57,168 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:00,270 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:00,271 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:00,656 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:15:01,823 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:04,901 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:04,902 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:05,048 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:15:06,546 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:09,904 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:09,905 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:10,722 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:15:11,492 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:15,220 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:15,220 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:15,772 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:15:17,358 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:20,063 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:15:20,517 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:20,518 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:22,075 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:25,234 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:25,234 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:25,861 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:15:26,881 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:30,383 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:30,383 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:30,888 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:15:31,957 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:35,072 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:15:35,253 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:35,254 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:37,177 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:40,975 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:15:41,052 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:41,052 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:42,630 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:45,795 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:45,797 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:46,020 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:15:47,426 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:50,075 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:15:51,209 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:51,209 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:52,799 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:55,098 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:15:55,867 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:55,868 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:15:57,444 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:00,141 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:16:00,560 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:00,560 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:02,249 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:05,089 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:16:05,352 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:05,352 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:07,450 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:10,209 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:16:10,979 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:10,980 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:12,568 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:15,237 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:16:16,271 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:16,272 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:18,241 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:20,142 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:16:22,004 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:22,004 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:23,956 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:25,414 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:16:27,696 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:27,696 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:29,375 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:30,476 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:16:33,501 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:33,502 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:35,153 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:16:35,188 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:38,367 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:38,368 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:40,041 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:40,537 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:16:43,418 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:43,419 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:45,077 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:45,558 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:16:48,267 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:48,268 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:49,921 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:50,155 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:16:53,058 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:53,058 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:54,598 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:55,710 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:16:57,775 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:57,775 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:16:59,470 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:00,754 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:17:03,210 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:03,210 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:05,152 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:17:05,789 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:09,018 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:09,018 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:10,601 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:10,947 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:17:13,846 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:13,846 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:15,471 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:15,990 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:17:18,664 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:18,666 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:20,159 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:17:20,207 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:23,378 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:23,381 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:25,099 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:26,055 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:17:28,940 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:28,940 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:30,613 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:31,109 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:17:33,758 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:33,758 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:35,201 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:17:35,846 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:39,039 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:39,039 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:40,227 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:17:40,634 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:43,926 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:43,927 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:45,271 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:17:45,903 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:49,115 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:49,116 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:50,210 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:17:50,704 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:55,018 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:55,023 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:17:55,343 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:17:56,845 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:00,040 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:00,040 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:00,374 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:18:01,642 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:05,220 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:18:05,497 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:05,498 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:07,337 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:10,478 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:18:11,328 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:11,329 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:12,972 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:15,547 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:18:16,762 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:16,763 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:18,355 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:20,235 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:18:21,620 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:21,621 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:23,216 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:25,623 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:18:26,428 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:26,429 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:28,060 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:30,668 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:18:31,306 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:31,308 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:32,903 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:35,486 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:18:37,022 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:37,023 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:38,822 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:18:40,785 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:18:45,814 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:18:50,431 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:18:55,885 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:19:00,921 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:19:05,435 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:19:05,793 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:05,794 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:07,389 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:07,406 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:07,423 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:07,439 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:07,814 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\media\images\train_batch2881_91_b49c4aeab5b20b5885af.jpg
+2024-06-13 18:19:07,814 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\media\images\train_batch2880_91_69ed59ddacbc18647138.jpg
+2024-06-13 18:19:07,815 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_created():271] file/dir created: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\media\images\train_batch2882_91_9c022e40625a0ea39e41.jpg
+2024-06-13 18:19:07,816 INFO    Thread-16 :10408 [dir_watcher.py:_on_file_modified():288] file/dir modified: B:\GitHub\ultralytics\ultralytics\ultralytics\wandb\run-20240613_181002-1jqw14gq\files\media\images
+2024-06-13 18:19:08,927 INFO    wandb-upload_3:10408 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 616, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000001B3CC5B17F0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B3CC5B17F0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001B3CC5B17F0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+2024-06-13 18:19:10,677 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:10,677 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:10,973 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:19:12,343 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:15,748 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:15,749 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:16,028 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:19:17,404 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:20,438 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:19:20,810 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:20,811 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:22,458 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:25,693 INFO    wandb-upload_3:10408 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmpj5b1fllbwandb\xm1r06hm-media/images/train_batch2880_91_69ed59ddacbc18647138.jpg
+2024-06-13 18:19:25,806 INFO    wandb-upload_1:10408 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmpj5b1fllbwandb\8ocyvhut-media/images/train_batch2882_91_9c022e40625a0ea39e41.jpg
+2024-06-13 18:19:25,860 INFO    wandb-upload_0:10408 [upload_job.py:push():131] Uploaded file C:\Users\Logan\AppData\Local\Temp\tmpj5b1fllbwandb\uerzlu6a-media/images/train_batch2881_91_b49c4aeab5b20b5885af.jpg
+2024-06-13 18:19:26,101 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:26,101 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:26,104 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:19:28,048 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:31,150 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:31,150 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:31,171 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:19:33,031 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:35,438 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:19:35,997 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:35,997 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:37,543 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:40,890 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:40,890 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:41,255 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:19:42,606 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:45,794 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:45,796 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:46,288 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:19:47,494 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:50,439 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: internal_messages
+2024-06-13 18:19:51,755 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:51,756 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:53,400 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: partial_history
+2024-06-13 18:19:54,778 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: poll_exit
+2024-06-13 18:19:59,826 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:20:04,876 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:20:09,913 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:20:14,947 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:20:19,976 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:20:25,012 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:20:30,038 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:20:35,065 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:20:40,105 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:20:45,141 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:20:50,181 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive
+2024-06-13 18:20:55,214 DEBUG   HandlerThread:10408 [handler.py:handle_request():146] handle_request: keepalive

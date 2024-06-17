@@ -1,0 +1,53 @@
+{
+    "os": "Windows-11-10.0.22631-SP0",
+    "python": "3.12.2",
+    "heartbeatAt": "2024-06-14T01:14:09.253844",
+    "startedAt": "2024-06-14T01:14:08.042162",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "B:\\GitHub\\ultralytics\\ultralytics\\ultralytics\\TestYolo.py",
+    "codePathLocal": "TestYolo.py",
+    "codePath": "ultralytics\\TestYolo.py",
+    "git": {
+        "remote": "https://github.com/Logan-Cole-Luna/ultralytics.git",
+        "commit": "f92bd9dea119715ced09d0b6ca6241cdadb8397b"
+    },
+    "email": "LoganLambeth8@gmail.com",
+    "root": "B:/GitHub/ultralytics/ultralytics",
+    "host": "DESKTOP-JA3B0L7",
+    "username": "Logan",
+    "executable": "C:\\Users\\Logan\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3593.0,
+        "min": 0.0,
+        "max": 3593.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3593.0,
+            "min": 0.0,
+            "max": 3593.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 476.93847274780273,
+            "used": 379.85459899902344
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 63.94804763793945
+    }
+}

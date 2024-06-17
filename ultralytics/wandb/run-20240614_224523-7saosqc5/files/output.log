@@ -1,0 +1,9 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+Exception ignored in: <generator object consistent.<locals>.<genexpr> at 0x000002295D409380>
+Traceback (most recent call last):
+  File "_pydevd_bundle\\pydevd_pep_669_tracing_cython.pyx", line 535, in _pydevd_bundle.pydevd_pep_669_tracing_cython.py_raise_callback
+  File "_pydevd_bundle\\pydevd_pep_669_tracing_cython.pyx", line 514, in _pydevd_bundle.pydevd_pep_669_tracing_cython.py_raise_callback
+  File "_pydevd_bundle\\pydevd_pep_669_tracing_cython.pyx", line 170, in _pydevd_bundle.pydevd_pep_669_tracing_cython._get_top_level_frame
+  File "<frozen ntpath>", line 270, in basename
+  File "<frozen ntpath>", line 246, in split

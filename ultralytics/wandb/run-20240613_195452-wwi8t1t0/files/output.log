@@ -1,0 +1,22 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+Plotting labels to C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train69\labels.jpg...
+        1/1     0.828G      1.974      4.397      1.821        104        640:  19%|█▉        | 6/32 [00:01<00:04,  6.46it/s]
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000119, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mC:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train69
+Starting training for 1 epochs...
+
+        1/1     0.858G      1.918      3.922      1.783         38        640: 100%|██████████| 32/32 [00:03<00:00,  8.41it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:02<00:00,  5.97it/s]
+                   all        128        929    0.00144     0.0201    0.00509    0.00344
+1 epochs completed in 0.005 hours.
+Optimizer stripped from C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train69\weights\last.pt, 16.3MB
+Optimizer stripped from C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train69\weights\best.pt, 16.3MB
+Validating C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train69\weights\best.pt...

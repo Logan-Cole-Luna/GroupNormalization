@@ -1,0 +1,1219 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([16, 1, 1, 1])
+Bias shape: torch.Size([16])
+Fused weight shape: torch.Size([16, 3, 3, 3])
+Fused bias shape: torch.Size([16])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 16, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 1, 1])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 48, 1, 1])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([16, 1, 1, 1])
+Bias shape: torch.Size([16])
+Fused weight shape: torch.Size([16, 16, 3, 3])
+Fused bias shape: torch.Size([16])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([16, 1, 1, 1])
+Bias shape: torch.Size([16])
+Fused weight shape: torch.Size([16, 16, 3, 3])
+Fused bias shape: torch.Size([16])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 32, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 128, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 64, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 256, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 128, 3, 3])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 256, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 384, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 256, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 512, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 384, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 192, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 192, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 96, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 192, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 192, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 384, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 384, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 128, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 256, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 64, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 80, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 128, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 80, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 256, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 80, 3, 3])
+Fused bias shape: torch.Size([80])
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+Plotting labels to C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train248\labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000119, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mC:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train248
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+      1/100     0.956G      1.402      2.536      1.441         38        640: 100%|██████████| 32/32 [00:04<00:00,  7.50it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:02<00:00,  5.39it/s]
+                   all        128        929      0.439      0.321      0.357      0.248
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:02<00:00,  6.58it/s]
+
+      2/100     0.889G      1.376      2.275      1.375         30        640:  84%|████████▍ | 27/32 [00:02<00:00, 10.90it/s]
+      2/100     0.889G      1.359      2.225      1.363         65        640: 100%|██████████| 32/32 [00:03<00:00, 10.28it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.30it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]
+
+      3/100     0.893G      1.343      2.116      1.358        107        640: 100%|██████████| 32/32 [00:02<00:00, 11.19it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.85it/s]
+                   all        128        929      0.464      0.443      0.452      0.325
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      4/100     0.893G      1.378      2.004      1.371         71        640: 100%|██████████| 32/32 [00:02<00:00, 10.78it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 13.92it/s]
+                   all        128        929      0.571      0.433       0.49       0.35
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.56it/s]
+      5/100     0.891G      1.323      1.875      1.341         19        640: 100%|██████████| 32/32 [00:02<00:00, 10.82it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  12%|█▎        | 2/16 [00:00<00:00, 14.23it/s]
+                   all        128        929      0.581       0.45      0.507      0.362
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.03it/s]
+
+      6/100     0.895G       1.31      1.812      1.328         64        640:  84%|████████▍ | 27/32 [00:02<00:00, 10.90it/s]
+      6/100     0.895G      1.313      1.822      1.333         65        640: 100%|██████████| 32/32 [00:02<00:00, 11.21it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.68it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]
+
+      7/100     0.893G      1.268      1.692      1.287         80        640: 100%|██████████| 32/32 [00:02<00:00, 11.30it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.48it/s]
+                   all        128        929      0.665      0.493      0.569      0.402
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      8/100     0.891G      1.274      1.711        1.3         34        640: 100%|██████████| 32/32 [00:02<00:00, 11.49it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 12/16 [00:00<00:00, 13.73it/s]
+                   all        128        929      0.692      0.484      0.588      0.421
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.95it/s]
+      9/100     0.889G      1.271      1.704      1.281         33        640: 100%|██████████| 32/32 [00:02<00:00, 11.42it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  38%|███▊      | 6/16 [00:00<00:00, 13.78it/s]
+                   all        128        929      0.635      0.539      0.614       0.44
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.40it/s]
+     10/100     0.891G      1.248      1.605       1.29         24        640: 100%|██████████| 32/32 [00:02<00:00, 11.01it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/16 [00:00<?, ?it/s]
+                   all        128        929      0.707      0.522      0.629      0.454
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.02it/s]
+
+     11/100     0.889G      1.191       1.64      1.251         49        640: 100%|██████████| 32/32 [00:03<00:00, 10.41it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.19it/s]
+                   all        128        929      0.607      0.591      0.648      0.473
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     12/100     0.891G      1.226      1.443      1.247         36        640: 100%|██████████| 32/32 [00:02<00:00, 10.99it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 14.83it/s]
+                   all        128        929      0.756      0.524      0.661      0.488
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.65it/s]
+     13/100     0.891G       1.19      1.496      1.258         76        640: 100%|██████████| 32/32 [00:02<00:00, 10.84it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 12.94it/s]
+                   all        128        929      0.759      0.543      0.668      0.496
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.85it/s]
+
+     14/100     0.891G      1.185      1.487      1.251         68        640:  88%|████████▊ | 28/32 [00:02<00:00, 10.65it/s]
+     14/100     0.891G      1.188      1.495      1.249         48        640: 100%|██████████| 32/32 [00:03<00:00, 10.64it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.37it/s]
+     15/100     0.889G      1.377      1.604      1.307         56        640:   3%|▎         | 1/32 [00:00<00:03,  9.98it/s]
+
+     15/100     0.893G      1.178      1.533      1.236         37        640: 100%|██████████| 32/32 [00:02<00:00, 11.41it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.51it/s]
+                   all        128        929      0.661      0.635      0.689      0.509
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     16/100     0.891G      1.247      1.451      1.215         36        640: 100%|██████████| 32/32 [00:02<00:00, 11.39it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:01<00:00, 13.46it/s]
+                   all        128        929      0.683      0.647      0.696      0.516
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.77it/s]
+     17/100     0.891G      1.169      1.362      1.218         32        640: 100%|██████████| 32/32 [00:02<00:00, 11.01it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 8/16 [00:00<00:00, 14.14it/s]
+                   all        128        929      0.687      0.662      0.703      0.518
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.95it/s]
+     18/100     0.891G      1.165      1.391      1.253         40        640: 100%|██████████| 32/32 [00:02<00:00, 11.49it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 14.33it/s]
+                   all        128        929      0.708      0.667      0.713      0.532
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.46it/s]
+
+     19/100     0.893G      1.144       1.37      1.214         43        640:  94%|█████████▍| 30/32 [00:02<00:00, 11.32it/s]
+     19/100     0.893G      1.151      1.394      1.219         36        640: 100%|██████████| 32/32 [00:02<00:00, 11.38it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.30it/s]
+     20/100     0.889G      1.079      1.229      1.145         48        640:  12%|█▎        | 4/32 [00:00<00:02, 11.24it/s]
+
+     20/100     0.889G      1.175      1.331      1.224         62        640: 100%|██████████| 32/32 [00:02<00:00, 11.17it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:01<00:00, 13.49it/s]
+                   all        128        929       0.75      0.651      0.729      0.546
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.33it/s]
+     21/100     0.891G       1.17      1.342      1.233         74        640: 100%|██████████| 32/32 [00:02<00:00, 11.35it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 8/16 [00:00<00:00, 15.33it/s]
+                   all        128        929      0.707      0.693      0.736      0.545
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.82it/s]
+     22/100     0.889G      1.142       1.33      1.238         37        640: 100%|██████████| 32/32 [00:02<00:00, 11.30it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 13.54it/s]
+                   all        128        929      0.772      0.669      0.743      0.551
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.80it/s]
+
+     23/100     0.889G      1.155      1.314      1.252         31        640:  91%|█████████ | 29/32 [00:02<00:00, 11.57it/s]
+                   all        128        929      0.807      0.663      0.743      0.554
+     23/100     0.889G      1.148       1.31      1.249         58        640: 100%|██████████| 32/32 [00:02<00:00, 11.17it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.08it/s]
+
+     24/100     0.893G      1.105      1.262      1.198         29        640:  75%|███████▌  | 24/32 [00:02<00:00, 11.35it/s]
+     24/100     0.893G      1.124      1.279      1.206         72        640: 100%|██████████| 32/32 [00:02<00:00, 11.33it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.63it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     25/100     0.891G      1.122      1.282      1.201         75        640: 100%|██████████| 32/32 [00:02<00:00, 11.32it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:01<00:00, 13.30it/s]
+                   all        128        929       0.79      0.681      0.759       0.57
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.18it/s]
+     26/100     0.891G      1.093      1.255      1.205         88        640: 100%|██████████| 32/32 [00:02<00:00, 10.77it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 12.70it/s]
+                   all        128        929      0.814      0.676      0.765      0.579
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.34it/s]
+     27/100     0.891G      1.117      1.195      1.194         32        640: 100%|██████████| 32/32 [00:02<00:00, 11.40it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/16 [00:00<?, ?it/s]
+                   all        128        929      0.826      0.681      0.773      0.584
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.36it/s]
+
+     28/100     0.889G      1.071      1.201        1.2         38        640: 100%|██████████| 32/32 [00:02<00:00, 10.69it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.25it/s]
+                   all        128        929      0.821      0.687      0.773      0.587
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     29/100     0.893G     0.9798      1.106       1.16         38        640: 100%|██████████| 32/32 [00:03<00:00, 10.31it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 8/16 [00:00<00:00, 13.67it/s]
+                   all        128        929      0.839      0.673      0.778      0.592
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.22it/s]
+     30/100     0.889G     0.9926      1.105      1.139         24        640: 100%|██████████| 32/32 [00:02<00:00, 11.18it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  12%|█▎        | 2/16 [00:00<00:00, 14.19it/s]
+                   all        128        929      0.857      0.671      0.784      0.597
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.25it/s]
+
+     31/100     0.889G      1.093      1.193      1.187         26        640:  88%|████████▊ | 28/32 [00:02<00:00, 10.89it/s]
+     31/100     0.891G      1.087       1.21       1.19         55        640: 100%|██████████| 32/32 [00:02<00:00, 10.91it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.10it/s]
+     32/100     0.889G      1.381      1.348      1.256        106        640:   0%|          | 0/32 [00:00<?, ?it/s]
+
+     32/100     0.891G       1.04      1.175       1.17         65        640: 100%|██████████| 32/32 [00:02<00:00, 11.34it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.73it/s]
+                   all        128        929      0.813       0.69      0.789      0.602
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     33/100     0.889G      1.054      1.131      1.189         55        640: 100%|██████████| 32/32 [00:02<00:00, 11.59it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 12/16 [00:00<00:00, 13.95it/s]
+                   all        128        929      0.795      0.704      0.788      0.604
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.27it/s]
+     34/100     0.893G      1.077      1.164      1.183         17        640: 100%|██████████| 32/32 [00:02<00:00, 11.22it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  38%|███▊      | 6/16 [00:00<00:00, 14.12it/s]
+                   all        128        929      0.774      0.732      0.782      0.605
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.31it/s]
+     35/100     0.889G      1.046      1.155       1.16         33        640: 100%|██████████| 32/32 [00:02<00:00, 11.21it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/16 [00:00<?, ?it/s]
+                   all        128        929      0.773      0.731      0.787      0.609
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.39it/s]
+
+     36/100     0.891G      1.026      1.141      1.193         48        640:  81%|████████▏ | 26/32 [00:02<00:00, 11.25it/s]
+     36/100     0.891G       1.04      1.139      1.185         58        640: 100%|██████████| 32/32 [00:02<00:00, 11.08it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.46it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]
+
+     37/100     0.893G       1.06      1.144      1.142         30        640: 100%|██████████| 32/32 [00:02<00:00, 11.05it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.94it/s]
+                   all        128        929      0.813      0.717      0.791      0.611
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     38/100     0.889G      1.043      1.086      1.156         29        640: 100%|██████████| 32/32 [00:02<00:00, 10.97it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 15.09it/s]
+                   all        128        929      0.826      0.707      0.793      0.616
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.21it/s]
+     39/100     0.889G      1.074      1.156      1.178        141        640: 100%|██████████| 32/32 [00:02<00:00, 11.49it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 14.85it/s]
+                   all        128        929      0.845      0.699      0.793      0.617
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.52it/s]
+
+     40/100     0.893G      1.067      1.119      1.172         33        640:  91%|█████████ | 29/32 [00:02<00:00, 11.27it/s]
+     40/100     0.893G      1.059      1.108      1.169         36        640: 100%|██████████| 32/32 [00:03<00:00, 10.66it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.46it/s]
+     41/100     0.889G     0.7467     0.7214     0.9849         42        640:   3%|▎         | 1/32 [00:00<00:03,  7.83it/s]
+
+     41/100     0.889G      1.045      1.099      1.153         59        640: 100%|██████████| 32/32 [00:03<00:00, 10.57it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.69it/s]
+                   all        128        929      0.841      0.705      0.799      0.622
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     42/100     0.889G      1.052      1.147      1.183         36        640: 100%|██████████| 32/32 [00:02<00:00, 11.27it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 14.08it/s]
+                   all        128        929      0.823      0.718      0.803      0.622
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.15it/s]
+
+     43/100     0.893G      1.026      1.106      1.157         38        640:  94%|█████████▍| 30/32 [00:02<00:00, 11.46it/s]
+                   all        128        929      0.838      0.706      0.806      0.629
+     43/100     0.893G       1.03      1.129       1.16         45        640: 100%|██████████| 32/32 [00:02<00:00, 11.46it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.37it/s]
+
+     44/100     0.893G      1.049      1.136      1.194         61        640:  78%|███████▊  | 25/32 [00:02<00:00, 10.81it/s]
+     44/100     0.893G      1.044      1.114      1.181         49        640: 100%|██████████| 32/32 [00:02<00:00, 10.81it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.45it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     45/100     0.891G      1.056      1.104      1.154         58        640: 100%|██████████| 32/32 [00:02<00:00, 11.71it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:00<00:00, 14.29it/s]
+                   all        128        929       0.82      0.734      0.805      0.633
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.62it/s]
+     46/100     0.891G      1.084      1.133      1.142         41        640: 100%|██████████| 32/32 [00:02<00:00, 11.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 8/16 [00:00<00:00, 14.08it/s]
+                   all        128        929      0.817      0.733      0.806      0.635
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.91it/s]
+
+     47/100     0.889G     0.9819      1.017      1.119         44        640:  97%|█████████▋| 31/32 [00:03<00:00,  9.86it/s]
+                   all        128        929      0.819      0.735      0.807      0.637
+     47/100     0.889G     0.9816      1.019      1.119         54        640: 100%|██████████| 32/32 [00:03<00:00, 10.17it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.22it/s]
+
+     48/100     0.893G      1.035      1.087      1.154         28        640: 100%|██████████| 32/32 [00:03<00:00, 10.60it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.89it/s]
+                   all        128        929      0.807       0.74      0.804      0.635
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+     49/100     0.893G      1.025      1.093      1.173         31        640: 100%|██████████| 32/32 [00:02<00:00, 10.84it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  50%|█████     | 8/16 [00:00<00:00, 12.70it/s]
+                   all        128        929       0.83      0.733       0.81       0.64
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 12.83it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/16 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/16 [00:00<?, ?it/s]
+                   all        128        929      0.819      0.738      0.809      0.638
+     51/100     0.889G     0.9871     0.9056      1.062         72        640:   6%|▋         | 2/32 [00:00<00:04,  7.32it/s], 13.29it/s]
+     51/100     0.893G     0.9664      1.079      1.145        114        640:  62%|██████▎   | 20/32 [00:02<00:01, 10.48it/s] 13.29it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:01<00:00, 13.62it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:01<00:00, 13.62it/s]
+                   all        128        929      0.814      0.735      0.809      0.641
+     52/100     0.889G      1.103      1.102      1.135         63        640:  47%|████▋     | 15/32 [00:01<00:01, 10.99it/s] 13.78it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 13.24it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 13.24it/s]]
+                   all        128        929      0.828      0.732      0.808      0.639
+     53/100     0.889G     0.9286     0.9726      1.101         62        640:  22%|██▏       | 7/32 [00:00<00:02,  9.61it/s], 13.37it/s]
+     53/100     0.889G     0.9825      1.006      1.119        109        640:  84%|████████▍ | 27/32 [00:02<00:00, 10.37it/s] 13.37it/s]
+     53/100     0.889G     0.9825      1.006      1.119        109        640:  84%|████████▍ | 27/32 [00:02<00:00, 10.37it/s] 13.37it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]tances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.07it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]tances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.07it/s]
+     54/100     0.893G     0.9947      1.036       1.15         63        640:  66%|██████▌   | 21/32 [00:01<00:01, 10.80it/s] 13.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:01<00:00, 13.53it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:01<00:00, 13.53it/s]
+                   all        128        929      0.841      0.723      0.813      0.644
+     55/100     0.889G      1.032      1.022      1.143         59        640:  41%|████      | 13/32 [00:01<00:01, 10.18it/s] 13.88it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 13.64it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 13.64it/s]]
+                   all        128        929      0.853      0.719      0.813      0.644
+     56/100     0.889G      1.007      1.195      1.136         50        640:  16%|█▌        | 5/32 [00:00<00:02, 10.59it/s], 13.18it/s]
+     56/100     0.889G      1.016      1.143      1.149         21        640:  84%|████████▍ | 27/32 [00:02<00:00, 10.65it/s] 13.18it/s]
+     56/100     0.889G      1.016      1.143      1.149         21        640:  84%|████████▍ | 27/32 [00:02<00:00, 10.65it/s] 13.18it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]tances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.74it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]tances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.74it/s]
+     57/100     0.889G      1.014      1.039       1.13         52        640:  66%|██████▌   | 21/32 [00:02<00:01, 10.14it/s] 13.74it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 13.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 13.07it/s]
+                   all        128        929      0.854      0.724      0.816      0.647
+     58/100     0.889G     0.9151     0.9393      1.096         16        640:  31%|███▏      | 10/32 [00:01<00:02, 10.13it/s] 13.13it/s]
+     58/100     0.889G     0.9645      1.013      1.126         41        640:  94%|█████████▍| 30/32 [00:03<00:00,  9.97it/s] 13.13it/s]
+     58/100     0.889G     0.9645      1.013      1.126         41        640:  94%|█████████▍| 30/32 [00:03<00:00,  9.97it/s] 13.13it/s]
+     59/100     0.889G     0.9838      1.155      1.194         45        640:   3%|▎         | 1/32 [00:00<00:03,  9.51it/s], 12.26it/s]
+     59/100     0.889G     0.9838      1.155      1.194         45        640:   3%|▎         | 1/32 [00:00<00:03,  9.51it/s], 12.26it/s]
+     59/100     0.893G     0.9978      1.031      1.143         80        640:  62%|██████▎   | 20/32 [00:02<00:01, 10.22it/s] 12.26it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 12/16 [00:00<00:00, 12.35it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 12/16 [00:00<00:00, 12.35it/s]
+                   all        128        929      0.824       0.75       0.82       0.65
+     60/100     0.889G      1.016      1.069      1.146         45        640:  34%|███▍      | 11/32 [00:01<00:02,  9.78it/s] 12.50it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/16 [00:00<?, ?it/s]2.50it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/16 [00:00<?, ?it/s]2.50it/s]
+     61/100     0.889G      1.015      1.074      1.204         38        640:   9%|▉         | 3/32 [00:00<00:02, 10.38it/s], 12.77it/s]
+     61/100     0.889G      1.015      1.074      1.204         38        640:   9%|▉         | 3/32 [00:00<00:02, 10.38it/s], 12.77it/s]
+     61/100     0.889G      0.996      1.008      1.127         59        640:  72%|███████▏  | 23/32 [00:02<00:00, 10.15it/s] 12.77it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:01<00:00, 12.80it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:01<00:00, 12.80it/s]
+                   all        128        929      0.845       0.74      0.826      0.653
+     62/100     0.891G      1.024      1.031      1.127         55        640:  47%|████▋     | 15/32 [00:01<00:01, 10.79it/s] 12.61it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  38%|███▊      | 6/16 [00:00<00:00, 13.66it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  38%|███▊      | 6/16 [00:00<00:00, 13.66it/s]]
+                   all        128        929      0.846      0.743      0.826      0.653
+     63/100     0.889G     0.9815      1.026      1.111         63        640:  31%|███▏      | 10/32 [00:00<00:02, 10.11it/s] 13.70it/s]
+     63/100     0.893G     0.9721       1.05      1.136         37        640:  91%|█████████ | 29/32 [00:02<00:00,  9.61it/s] 13.70it/s]
+     63/100     0.893G     0.9721       1.05      1.136         37        640:  91%|█████████ | 29/32 [00:02<00:00,  9.61it/s] 13.70it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]tances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 12.50it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]tances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 12.50it/s]
+     64/100     0.889G     0.9276     0.9338      1.086         69        640:  59%|█████▉    | 19/32 [00:02<00:01, 10.29it/s] 12.50it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 13.06it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 13.06it/s]
+                   all        128        929      0.806      0.754      0.825      0.652
+     65/100     0.889G      0.962     0.9622      1.084         70        640:  34%|███▍      | 11/32 [00:01<00:01, 10.65it/s] 13.31it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  12%|█▎        | 2/16 [00:00<00:01, 13.54it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  12%|█▎        | 2/16 [00:00<00:01, 13.54it/s]]
+                   all        128        929      0.817      0.746      0.827      0.656
+     66/100     0.889G      1.011     0.9887      1.145         17        640:  16%|█▌        | 5/32 [00:00<00:02, 10.97it/s], 13.90it/s]
+     66/100     0.889G     0.9582     0.9323      1.111         56        640:  84%|████████▍ | 27/32 [00:02<00:00, 11.09it/s] 13.90it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 12.81it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 12.81it/s]
+                   all        128        929      0.855      0.735       0.83      0.656
+     67/100     0.893G     0.9975     0.9956      1.114         71        640:  41%|████      | 13/32 [00:01<00:01, 10.24it/s] 12.81it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  12%|█▎        | 2/16 [00:00<00:01, 11.74it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  12%|█▎        | 2/16 [00:00<00:01, 11.74it/s]]
+                   all        128        929      0.847      0.738      0.832      0.659
+     68/100     0.889G     0.9122     0.8807      1.062         48        640:  12%|█▎        | 4/32 [00:00<00:02, 10.44it/s], 12.80it/s]
+     68/100     0.889G     0.9536     0.9522      1.098         38        640:  81%|████████▏ | 26/32 [00:02<00:00, 10.08it/s] 12.80it/s]
+     68/100     0.889G     0.9536     0.9522      1.098         38        640:  81%|████████▏ | 26/32 [00:02<00:00, 10.08it/s] 12.80it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.68it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.68it/s]
+     69/100     0.891G     0.9763      0.982      1.101        102        640:  59%|█████▉    | 19/32 [00:01<00:01, 10.97it/s] 13.68it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 12/16 [00:00<00:00, 13.68it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 12/16 [00:00<00:00, 13.68it/s]
+                   all        128        929      0.851      0.744      0.836      0.664
+     70/100     0.889G      0.938     0.9202      1.071         17        640:  41%|████      | 13/32 [00:01<00:01,  9.93it/s] 13.76it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 14.32it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 14.32it/s]]
+                   all        128        929      0.837      0.755      0.838      0.664
+     71/100     0.889G      1.045      1.035      1.121         47        640:  25%|██▌       | 8/32 [00:00<00:02, 10.24it/s], 13.98it/s]
+     71/100     0.893G     0.9531       1.01      1.113         51        640:  94%|█████████▍| 30/32 [00:02<00:00, 10.75it/s] 13.98it/s]
+     71/100     0.893G     0.9531       1.01      1.113         51        640:  94%|█████████▍| 30/32 [00:02<00:00, 10.75it/s] 13.98it/s]
+                   all        128        929       0.85      0.745      0.839      0.665
+     72/100     0.889G     0.8488     0.8333      1.168         33        640:   3%|▎         | 1/32 [00:00<00:03,  8.72it/s], 14.35it/s]
+     72/100     0.893G     0.9529     0.9406      1.142         46        640:  72%|███████▏  | 23/32 [00:02<00:00, 10.47it/s] 14.35it/s]
+     72/100     0.893G     0.9529     0.9406      1.142         46        640:  72%|███████▏  | 23/32 [00:02<00:00, 10.47it/s] 14.35it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.82it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.82it/s]
+     73/100     0.891G     0.9535     0.9501      1.112         77        640:  53%|█████▎    | 17/32 [00:01<00:01, 11.04it/s] 13.82it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 14.06it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 14.06it/s]
+                   all        128        929      0.847      0.747      0.841      0.666
+     74/100     0.889G      1.022       1.05       1.13        105        640:  38%|███▊      | 12/32 [00:01<00:01, 10.86it/s] 14.34it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 14.65it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 14.65it/s]]
+                   all        128        929      0.843      0.745      0.841      0.667
+     75/100     0.891G      1.049      1.019      1.147         84        640:  22%|██▏       | 7/32 [00:00<00:02,  9.87it/s], 14.32it/s]
+     75/100     0.891G       1.01     0.9887      1.133         21        640:  84%|████████▍ | 27/32 [00:02<00:00, 10.46it/s] 14.32it/s]
+     75/100     0.891G       1.01     0.9887      1.133         21        640:  84%|████████▍ | 27/32 [00:02<00:00, 10.46it/s] 14.32it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]tances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.42it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]tances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.42it/s]
+     76/100     0.891G     0.9665     0.9338      1.111         47        640:  62%|██████▎   | 20/32 [00:01<00:01, 10.84it/s] 13.42it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:00<00:00, 14.53it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:00<00:00, 14.53it/s]
+                   all        128        929      0.864      0.744      0.843      0.676
+     77/100     0.889G      0.975     0.9301      1.126         46        640:  53%|█████▎    | 17/32 [00:01<00:01, 11.55it/s] 14.41it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 14.39it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 14.39it/s]
+                   all        128        929       0.86      0.741      0.842      0.672
+     78/100     0.889G     0.8994      0.897      1.084         39        640:  41%|████      | 13/32 [00:01<00:01, 11.36it/s] 14.14it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  12%|█▎        | 2/16 [00:00<00:01, 12.91it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  12%|█▎        | 2/16 [00:00<00:01, 12.91it/s]]
+                   all        128        929      0.864      0.747      0.845      0.676
+     79/100     0.889G      1.027      1.037      1.178         54        640:  22%|██▏       | 7/32 [00:00<00:02, 10.48it/s], 13.70it/s]
+     79/100     0.891G     0.9682     0.9706      1.122         74        640:  91%|█████████ | 29/32 [00:02<00:00, 11.16it/s] 13.70it/s]
+     79/100     0.891G     0.9682     0.9706      1.122         74        640:  91%|█████████ | 29/32 [00:02<00:00, 11.16it/s] 13.70it/s]
+     80/100     0.889G      1.056      1.006      1.097        204        640:   6%|▋         | 2/32 [00:00<00:02, 10.40it/s], 14.29it/s]
+     80/100     0.889G      1.056      1.006      1.097        204        640:   6%|▋         | 2/32 [00:00<00:02, 10.40it/s], 14.29it/s]
+     80/100     0.891G     0.9534     0.9552       1.11         40        640:  75%|███████▌  | 24/32 [00:02<00:00, 10.89it/s] 14.29it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.12it/s]
+                   all        128        929      0.862      0.744      0.845      0.675
+     81/100     0.891G     0.9738     0.9656      1.088         26        640:  59%|█████▉    | 19/32 [00:01<00:01, 10.99it/s] 14.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 14.24it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 14.24it/s]
+                   all        128        929      0.865      0.741      0.843      0.674
+     82/100     0.891G     0.9552      0.999        1.1         88        640:  34%|███▍      | 11/32 [00:01<00:01, 10.55it/s] 13.84it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  12%|█▎        | 2/16 [00:00<00:00, 15.16it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  12%|█▎        | 2/16 [00:00<00:00, 15.16it/s]]
+                   all        128        929      0.884      0.731      0.843      0.677
+     83/100     0.889G      1.077      1.014      1.176         36        640:  25%|██▌       | 8/32 [00:00<00:02, 11.03it/s], 14.59it/s]
+     83/100     0.893G     0.9678     0.9721      1.128         49        640:  94%|█████████▍| 30/32 [00:02<00:00, 11.22it/s] 14.59it/s]
+     83/100     0.893G     0.9678     0.9721      1.128         49        640:  94%|█████████▍| 30/32 [00:02<00:00, 11.22it/s] 14.59it/s]
+                   all        128        929      0.875      0.731      0.842      0.676
+     84/100     0.889G     0.9925      1.093      1.117         56        640:   9%|▉         | 3/32 [00:00<00:02, 10.07it/s], 14.60it/s]
+     84/100     0.891G     0.8794     0.8915      1.073         86        640:  78%|███████▊  | 25/32 [00:02<00:00, 10.84it/s] 14.60it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.24it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.24it/s]
+                   all        128        929      0.865      0.748      0.846       0.68
+     85/100     0.889G     0.9017     0.9798      1.089         36        640:  66%|██████▌   | 21/32 [00:01<00:00, 11.20it/s] 14.24it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:00<00:00, 15.03it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:00<00:00, 15.03it/s]
+                   all        128        929      0.869      0.737      0.845       0.68
+     86/100     0.891G     0.9767     0.9585      1.099         60        640:  56%|█████▋    | 18/32 [00:01<00:01, 11.50it/s] 15.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 15.05it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  62%|██████▎   | 10/16 [00:00<00:00, 15.05it/s]
+                   all        128        929      0.853      0.755      0.847      0.679
+     87/100     0.891G     0.9089      1.023      1.147         40        640:  41%|████      | 13/32 [00:01<00:01, 10.96it/s] 14.91it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 13.61it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 13.61it/s]]
+                   all        128        929      0.865      0.746      0.843      0.677
+     88/100     0.889G      0.895     0.8569      1.041         56        640:  22%|██▏       | 7/32 [00:00<00:02, 10.31it/s], 13.45it/s]
+     88/100     0.889G     0.9643     0.9434      1.123         48        640:  91%|█████████ | 29/32 [00:02<00:00, 11.13it/s] 13.45it/s]
+     88/100     0.889G     0.9643     0.9434      1.123         48        640:  91%|█████████ | 29/32 [00:02<00:00, 11.13it/s] 13.45it/s]
+     89/100     0.889G      1.136       1.05      1.208         51        640:   6%|▋         | 2/32 [00:00<00:02, 10.94it/s], 14.43it/s]
+     89/100     0.889G      1.136       1.05      1.208         51        640:   6%|▋         | 2/32 [00:00<00:02, 10.94it/s], 14.43it/s]
+     89/100     0.889G     0.9969          1      1.138         41        640:  75%|███████▌  | 24/32 [00:02<00:00, 10.91it/s] 14.43it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 12/16 [00:00<00:00, 13.94it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 12/16 [00:00<00:00, 13.94it/s]
+                   all        128        929      0.801       0.79      0.847       0.68
+     90/100     0.891G     0.9333     0.9183      1.095         40        640:  41%|████      | 13/32 [00:01<00:01, 10.63it/s] 14.29it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 14.13it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 14.13it/s]]
+                   all        128        929      0.818      0.779      0.846       0.68
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.12it/s]
+     91/100     0.889G      1.141      1.142      1.091         41        640:   6%|▋         | 2/32 [00:00<00:09,  3.09it/s], 13.12it/s]
+     91/100     0.893G      1.012      1.032      1.104         50        640:  75%|███████▌  | 24/32 [00:02<00:00, 10.94it/s] 13.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.66it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.66it/s]
+                   all        128        929      0.857      0.747      0.836      0.676
+     92/100     0.893G     0.9804      1.008      1.091         28        640:  62%|██████▎   | 20/32 [00:01<00:01, 11.76it/s] 14.66it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:00<00:00, 14.67it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  88%|████████▊ | 14/16 [00:00<00:00, 14.67it/s]
+                   all        128        929      0.867       0.74      0.829      0.662
+     93/100     0.893G     0.8804     0.9939      1.098         14        640:  44%|████▍     | 14/32 [00:01<00:01, 11.06it/s] 14.78it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  38%|███▊      | 6/16 [00:00<00:00, 14.31it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  38%|███▊      | 6/16 [00:00<00:00, 14.31it/s]]
+                   all        128        929       0.84      0.752      0.829      0.663
+     94/100     0.893G     0.9658      0.996      1.069         45        640:  28%|██▊       | 9/32 [00:00<00:02, 11.26it/s], 13.97it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/16 [00:00<?, ?it/s]3.97it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 0/16 [00:00<?, ?it/s]3.97it/s]
+                   all        128        929       0.85      0.744       0.83      0.664
+     95/100     0.889G      1.187      1.261      1.081         15        640:  19%|█▉        | 6/32 [00:00<00:02, 10.90it/s], 14.91it/s]
+     95/100     0.893G      1.044      1.106      1.092         26        640:  94%|█████████▍| 30/32 [00:02<00:00, 11.94it/s] 14.91it/s]
+     95/100     0.893G      1.044      1.106      1.092         26        640:  94%|█████████▍| 30/32 [00:02<00:00, 11.94it/s] 14.91it/s]
+     96/100     0.895G     0.8187     0.8802      1.112         17        640:  12%|█▎        | 4/32 [00:00<00:02, 11.68it/s], 14.56it/s]
+     96/100     0.895G     0.8187     0.8802      1.112         17        640:  12%|█▎        | 4/32 [00:00<00:02, 11.68it/s], 14.56it/s]
+     96/100     0.895G     0.9905       1.06      1.143         34        640:  81%|████████▏ | 26/32 [00:02<00:00, 11.52it/s] 14.56it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]tances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.71it/s]
+  0%|          | 0/32 [00:00<?, ?it/s]tances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 13.71it/s]
+                   all        128        929      0.851      0.748       0.83      0.665
+     97/100     0.893G     0.9003     0.9186      1.052         25        640:  66%|██████▌   | 21/32 [00:01<00:00, 11.32it/s] 13.71it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.98it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.98it/s]
+                   all        128        929      0.855      0.752      0.831      0.665
+     98/100     0.893G     0.9459       1.02      1.108         54        640:  56%|█████▋    | 18/32 [00:01<00:01, 12.07it/s] 14.98it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 12/16 [00:00<00:00, 14.77it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  75%|███████▌  | 12/16 [00:00<00:00, 14.77it/s]
+                   all        128        929      0.852      0.746      0.831      0.668
+     99/100     0.891G     0.9492     0.8696      1.069         12        640:  44%|████▍     | 14/32 [00:01<00:01, 10.67it/s] 14.70it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 13.82it/s]]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  25%|██▌       | 4/16 [00:00<00:00, 13.82it/s]]
+                   all        128        929      0.854      0.753      0.834      0.669
+    100/100     0.891G      1.026      1.058      1.162         48        640:  22%|██▏       | 7/32 [00:00<00:02, 10.18it/s], 13.42it/s]
+    100/100     0.891G     0.9742     0.9955      1.092         23        640:  91%|█████████ | 29/32 [00:02<00:00, 10.80it/s] 13.42it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.52it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.52it/s]
+                   all        128        929      0.847      0.756      0.832      0.668
+100 epochs completed in 0.134 hours.
+Optimizer stripped from C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train248\weights\last.pt, 6.5MB
+Optimizer stripped from C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train248\weights\best.pt, 6.5MB
+Validating C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train248\weights\best.pt...
+Ultralytics YOLOv8.2.32 🚀 Python-3.12.2 torch-2.2.2+cu121 CUDA:0 (NVIDIA GeForce RTX 3060, 12287MiB)
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([16, 1, 1, 1])
+Bias shape: torch.Size([16])
+Fused weight shape: torch.Size([16, 3, 3, 3])
+Fused bias shape: torch.Size([16])
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 16, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 1, 1])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 48, 1, 1])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([16, 1, 1, 1])
+Bias shape: torch.Size([16])
+Fused weight shape: torch.Size([16, 16, 3, 3])
+Fused bias shape: torch.Size([16])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([16, 1, 1, 1])
+Bias shape: torch.Size([16])
+Fused weight shape: torch.Size([16, 16, 3, 3])
+Fused bias shape: torch.Size([16])
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 32, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 128, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 64, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 256, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 128, 3, 3])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 256, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 384, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 256, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 512, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 384, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 192, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 192, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 96, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 192, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 192, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 384, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 384, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 128, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 256, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 64, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 80, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 128, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 80, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 256, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 80, 3, 3])
+Fused bias shape: torch.Size([80])
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:00<00:00, 17.73it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:00<00:00, 17.73it/s]
+                   all        128        929     0.0289     0.0225    0.00105   0.000498
+                person         61        254    0.00415    0.00394    0.00235   0.000352
+               bicycle          3          6          0          0          0          0
+                   car         12         46   0.000168     0.0435   0.000362   0.000208
+            motorcycle          4          5          0          0          0          0
+              airplane          5          6    0.00222      0.167     0.0085    0.00185
+                   bus          5          7          0          0          0          0
+                 train          3          3          0          0          0          0
+                 truck          5         12    0.00226     0.0833   0.000926   0.000278
+                  boat          2          6    0.00129      0.167    0.00188    0.00113
+         traffic light          4         14          0          0          0          0
+             stop sign          2          2          0          0          0          0
+                 bench          5          9    0.00195      0.222    0.00565     0.0013
+                  bird          2         16          0          0          0          0
+                   cat          4          4          0          0          0          0
+                   dog          9          9          0          0          0          0
+                 horse          1          2          0          0          0          0
+              elephant          4         17          0          0          0          0
+                  bear          1          1          0          0          0          0
+                 zebra          2          4          0          0    0.00763   0.000763
+               giraffe          4          9          0          0          0          0
+              backpack          4          6          0          0          0          0
+              umbrella          4         18          0          0          0          0
+               handbag          9         19          0          0          0          0
+                   tie          6          7          0          0          0          0
+              suitcase          2          4          0          0          0          0
+               frisbee          5          5          0          0          0          0
+                  skis          1          1          0          0          0          0
+             snowboard          2          7          0          0          0          0
+           sports ball          6          6          0          0          0          0
+                  kite          2         10          0          0          0          0
+          baseball bat          4          4          0          0          0          0
+        baseball glove          4          7          0          0          0          0
+            skateboard          3          5          0          0          0          0
+         tennis racket          5          7          1          0          0          0
+                bottle          6         18          0          0          0          0
+            wine glass          5         16          0          0          0          0
+                   cup         10         36          0          0          0          0
+                  fork          6          6          0          0          0          0
+                 knife          7         16          1          0          0          0
+                 spoon          5         22          0          0          0          0
+                  bowl          9         28    0.00155     0.0357     0.0013   0.000782
+                banana          1          1          0          0          0          0
+              sandwich          2          2          0          0          0          0
+                orange          1          4          0          0          0          0
+              broccoli          4         11          0          0          0          0
+                carrot          3         24          0          0          0          0
+               hot dog          1          2          0          0          0          0
+                 pizza          5          5      0.026        0.6     0.0335     0.0254
+                 donut          2         14          0          0          0          0
+                  cake          4          4          0          0          0          0
+                 chair          9         35          0          0          0          0
+                 couch          5          6          0          0          0          0
+          potted plant          9         14          0          0          0          0
+                   bed          3          3          0          0          0          0
+          dining table         10         13     0.0123     0.0769    0.00914      0.003
+                toilet          2          2          0          0          0          0
+                    tv          2          2          0          0          0          0
+                laptop          2          3          0          0          0          0
+                 mouse          2          2          0          0          0          0
+                remote          5          8          0          0          0          0
+            cell phone          5          8          0          0          0          0
+             microwave          3          3          0          0          0          0
+                  oven          5          5   0.000845        0.2    0.00346   0.000346
+                  sink          4          6          0          0          0          0
+          refrigerator          5          5          0          0          0          0
+                  book          6         29          0          0          0          0
+                 clock          8          9          0          0          0          0
+                  vase          2          2          0          0          0          0
+              scissors          1          1          0          0          0          0
+            teddy bear          6         21          0          0          0          0
+            toothbrush          2          5          0          0          0          0
+Speed: 0.2ms preprocess, 1.7ms inference, 0.0ms loss, 1.2ms postprocess per image
+Results saved to [1mC:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train248

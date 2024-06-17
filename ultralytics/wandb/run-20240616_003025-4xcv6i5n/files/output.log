@@ -1,0 +1,797 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([16, 1, 1, 1])
+Bias shape: torch.Size([16])
+Fused weight shape: torch.Size([16, 3, 3, 3])
+Fused bias shape: torch.Size([16])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 16, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 1, 1])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 48, 1, 1])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([16, 1, 1, 1])
+Bias shape: torch.Size([16])
+Fused weight shape: torch.Size([16, 16, 3, 3])
+Fused bias shape: torch.Size([16])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([16, 1, 1, 1])
+Bias shape: torch.Size([16])
+Fused weight shape: torch.Size([16, 16, 3, 3])
+Fused bias shape: torch.Size([16])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 32, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 128, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 64, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 256, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 128, 3, 3])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 256, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 384, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 256, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 512, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 384, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 192, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 192, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 96, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 192, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 192, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 384, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 384, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 128, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 256, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 64, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 80, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 128, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 80, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 256, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 80, 3, 3])
+Fused bias shape: torch.Size([80])
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+Plotting labels to C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train255\labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000119, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mC:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train255
+Starting training for 1 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+        1/1     0.954G      1.402      2.536      1.441         38        640: 100%|██████████| 32/32 [00:04<00:00,  7.98it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:02<00:00,  5.66it/s]
+                   all        128        929      0.439      0.321      0.357      0.248
+1 epochs completed in 0.003 hours.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  12%|█▎        | 2/16 [00:00<00:02,  5.38it/s]
+Optimizer stripped from C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train255\weights\last.pt, 6.5MB
+Optimizer stripped from C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train255\weights\best.pt, 6.5MB
+Validating C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train255\weights\best.pt...
+Ultralytics YOLOv8.2.32 🚀 Python-3.12.2 torch-2.2.2+cu121 CUDA:0 (NVIDIA GeForce RTX 3060, 12287MiB)
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([16, 1, 1, 1]), expected shape: torch.Size([16, 3, 3, 3])
+Bias shape: torch.Size([16]), conv.bias shape: No bias
+Scale shape: torch.Size([16, 1, 1, 1])
+Bias shape: torch.Size([16])
+Fused weight shape: torch.Size([16, 3, 3, 3])
+Fused bias shape: torch.Size([16])
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([32, 1, 1, 1]), expected shape: torch.Size([32, 16, 3, 3])
+Bias shape: torch.Size([32]), conv.bias shape: No bias
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 16, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 1, 1])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 48, 1, 1])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([16, 1, 1, 1])
+Bias shape: torch.Size([16])
+Fused weight shape: torch.Size([16, 16, 3, 3])
+Fused bias shape: torch.Size([16])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([16, 1, 1, 1])
+Bias shape: torch.Size([16])
+Fused weight shape: torch.Size([16, 16, 3, 3])
+Fused bias shape: torch.Size([16])
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([64, 1, 1, 1]), expected shape: torch.Size([64, 32, 3, 3])
+Bias shape: torch.Size([64]), conv.bias shape: No bias
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 32, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 128, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([128, 1, 1, 1]), expected shape: torch.Size([128, 64, 3, 3])
+Bias shape: torch.Size([128]), conv.bias shape: No bias
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 64, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 256, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([256, 1, 1, 1]), expected shape: torch.Size([256, 128, 3, 3])
+Bias shape: torch.Size([256]), conv.bias shape: No bias
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 128, 3, 3])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 256, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 384, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 256, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 512, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 384, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 192, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 192, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 96, 1, 1])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([32, 1, 1, 1])
+Bias shape: torch.Size([32])
+Fused weight shape: torch.Size([32, 32, 3, 3])
+Fused bias shape: torch.Size([32])
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([64, 1, 1, 1]), expected shape: torch.Size([64, 64, 3, 3])
+Bias shape: torch.Size([64]), conv.bias shape: No bias
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 192, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 192, 1, 1])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with GroupNorm
+Scale shape: torch.Size([128, 1, 1, 1]), expected shape: torch.Size([128, 128, 3, 3])
+Bias shape: torch.Size([128]), conv.bias shape: No bias
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 384, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([256, 1, 1, 1])
+Bias shape: torch.Size([256])
+Fused weight shape: torch.Size([256, 384, 1, 1])
+Fused bias shape: torch.Size([256])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([128, 1, 1, 1])
+Bias shape: torch.Size([128])
+Fused weight shape: torch.Size([128, 128, 3, 3])
+Fused bias shape: torch.Size([128])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 128, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 256, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([64, 1, 1, 1])
+Bias shape: torch.Size([64])
+Fused weight shape: torch.Size([64, 64, 3, 3])
+Fused bias shape: torch.Size([64])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 64, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 80, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 128, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 80, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 256, 3, 3])
+Fused bias shape: torch.Size([80])
+Device: cuda:0
+Fusing with BatchNorm2d
+Scale shape: torch.Size([80, 1, 1, 1])
+Bias shape: torch.Size([80])
+Fused weight shape: torch.Size([80, 80, 3, 3])
+Fused bias shape: torch.Size([80])
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:01<00:00, 14.23it/s]
+                   all        128        929    0.00173     0.0263    0.00305    0.00152
+                person         61        254          0          0          0          0
+               bicycle          3          6          0          0          0          0
+                   car         12         46          0          0          0          0
+            motorcycle          4          5          0          0          0          0
+              airplane          5          6          0          0          0          0
+                   bus          5          7          0          0          0          0
+                 train          3          3          0          0          0          0
+                 truck          5         12          0          0          0          0
+                  boat          2          6          0          0          0          0
+         traffic light          4         14          0          0          0          0
+             stop sign          2          2          0          0          0          0
+                 bench          5          9     0.0213      0.111     0.0161    0.00807
+                  bird          2         16          0          0          0          0
+                   cat          4          4          0          0          0          0
+                   dog          9          9          0          0          0          0
+                 horse          1          2          0          0          0          0
+              elephant          4         17          0          0          0          0
+                  bear          1          1          0          0          0          0
+                 zebra          2          4          0          0          0          0
+               giraffe          4          9          0          0          0          0
+              backpack          4          6          0          0          0          0
+              umbrella          4         18          0          0          0          0
+               handbag          9         19          0          0          0          0
+                   tie          6          7          0          0          0          0
+              suitcase          2          4          0          0          0          0
+               frisbee          5          5          0          0          0          0
+                  skis          1          1          0          0          0          0
+             snowboard          2          7          0          0          0          0
+           sports ball          6          6          0          0          0          0
+                  kite          2         10          0          0          0          0
+          baseball bat          4          4          0          0          0          0
+        baseball glove          4          7          0          0          0          0
+            skateboard          3          5          0          0          0          0
+         tennis racket          5          7          0          0          0          0
+                bottle          6         18          0          0          0          0
+            wine glass          5         16          0          0          0          0
+                   cup         10         36          0          0          0          0
+                  fork          6          6          0          0          0          0
+                 knife          7         16          0          0          0          0
+                 spoon          5         22          0          0          0          0
+                  bowl          9         28     0.0234      0.107     0.0146     0.0095
+                banana          1          1          0          0          0          0
+              sandwich          2          2          0          0          0          0
+                orange          1          4          0          0          0          0
+              broccoli          4         11          0          0          0          0
+                carrot          3         24          0          0          0          0
+               hot dog          1          2          0          0          0          0
+                 pizza          5          5     0.0234        0.6     0.0247      0.018
+                 donut          2         14          0          0          0          0
+                  cake          4          4          0          0          0          0
+                 chair          9         35          0          0          0          0
+                 couch          5          6          0          0          0          0
+          potted plant          9         14          0          0          0          0
+                   bed          3          3     0.0156      0.667     0.0202     0.0121
+          dining table         10         13     0.0391      0.385      0.141     0.0606
+                toilet          2          2          0          0          0          0
+                    tv          2          2          0          0          0          0
+                laptop          2          3          0          0          0          0
+                 mouse          2          2          0          0          0          0
+                remote          5          8          0          0          0          0
+            cell phone          5          8          0          0          0          0
+             microwave          3          3          0          0          0          0
+                  oven          5          5          0          0          0          0
+                  sink          4          6          0          0          0          0
+          refrigerator          5          5          0          0          0          0
+                  book          6         29          0          0          0          0
+                 clock          8          9          0          0          0          0
+                  vase          2          2          0          0          0          0
+              scissors          1          1          0          0          0          0
+            teddy bear          6         21          0          0          0          0
+            toothbrush          2          5          0          0          0          0
+Speed: 0.3ms preprocess, 3.4ms inference, 0.0ms loss, 1.1ms postprocess per image

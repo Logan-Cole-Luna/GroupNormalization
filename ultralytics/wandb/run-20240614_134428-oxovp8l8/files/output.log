@@ -1,0 +1,46 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mtrain: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+[34m[1mAMP: [39m[22mchecks failed ❌. Anomalies were detected with AMP on your system that may lead to NaN losses or zero-mAP results, so AMP will be disabled during training.
+[34m[1mval: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+Plotting labels to C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train126\labels.jpg...
+        1/1       1.3G     0.9111      2.507      1.326         24        640:   3%|▎         | 1/32 [00:00<00:28,  1.10it/s]
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000119, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mC:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train126
+Starting training for 1 epochs...
+        1/1      1.32G      1.433      3.144        1.5         47        640:  22%|██▏       | 7/32 [00:01<00:05,  4.42it/s]
+Traceback (most recent call last):
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\TestYolo.py", line 9, in <module>
+    train_yolo()
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\TestYolo.py", line 5, in train_yolo
+    results = model.train(data="coco128.yaml", epochs=1, imgsz=640, batch=4)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\model.py", line 674, in train
+    self.trainer.train()
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\trainer.py", line 199, in train
+    self._do_train(world_size)
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\trainer.py", line 376, in _do_train
+    self.loss, self.loss_items = self.model(batch)
+                                 ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\nn\tasks.py", line 88, in forward
+    return self.loss(x, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\nn\tasks.py", line 269, in loss
+    return self.criterion(preds, batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\utils\loss.py", line 215, in __call__
+    targets = self.preprocess(targets.to(self.device), batch_size, scale_tensor=imgsz[[1, 0, 1, 0]])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\utils\loss.py", line 184, in preprocess
+    out[j, :n] = targets[matches, 1:]
+    ~~~^^^^^^^
+KeyboardInterrupt

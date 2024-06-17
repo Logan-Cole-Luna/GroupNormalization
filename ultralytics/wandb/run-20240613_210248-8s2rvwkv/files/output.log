@@ -1,0 +1,51 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\TestYolo.py", line 9, in <module>
+    train_yolo()
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\TestYolo.py", line 5, in train_yolo
+    results = model.train(data="coco128.yaml", epochs=1, imgsz=640, batch=4)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\model.py", line 674, in train
+    self.trainer.train()
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\trainer.py", line 199, in train
+    self._do_train(world_size)
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\trainer.py", line 318, in _do_train
+    self._setup_train(world_size)
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\trainer.py", line 285, in _setup_train
+    self.test_loader = self.get_dataloader(
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\models\yolo\detect\train.py", line 55, in get_dataloader
+    return build_dataloader(dataset, batch_size, workers, shuffle, rank)  # return dataloader
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\data\build.py", line 135, in build_dataloader
+    return InfiniteDataLoader(
+           ^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\data\build.py", line 39, in __init__
+    self.iterator = super().__iter__()
+                    ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 439, in __iter__
+    return self._get_iterator()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 387, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 1040, in __init__
+    w.start()
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\popen_spawn_win32.py", line 95, in __init__
+    reduction.dump(process_obj, to_child)
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+KeyboardInterrupt

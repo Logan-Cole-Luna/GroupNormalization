@@ -1,0 +1,44 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+Traceback (most recent call last):
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\TestYolo.py", line 9, in <module>
+    train_yolo()
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\TestYolo.py", line 5, in train_yolo
+    results = model.train(data="coco128.yaml", epochs=1, imgsz=640, batch=4)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\model.py", line 674, in train
+    self.trainer.train()
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\trainer.py", line 199, in train
+    self._do_train(world_size)
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\trainer.py", line 318, in _do_train
+    self._setup_train(world_size)
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\trainer.py", line 257, in _setup_train
+    self.amp = torch.tensor(check_amp(self.model), device=self.device)
+                            ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\utils\checks.py", line 663, in check_amp
+    assert amp_allclose(YOLO("yolov8n.pt"), im)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\utils\checks.py", line 650, in amp_allclose
+    a = m(im, device=device, verbose=False)[0].boxes.data  # FP32 inference
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\model.py", line 177, in __call__
+    return self.predict(source, stream, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\model.py", line 446, in predict
+    self.predictor.setup_model(model=self.model, verbose=is_cli)
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\predictor.py", line 303, in setup_model
+    self.model = AutoBackend(
+                 ^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\nn\autobackend.py", line 144, in __init__
+    model = model.fuse(verbose=verbose)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\nn\tasks.py", line 184, in fuse
+    m.conv = fuse_conv_and_bn(m.conv, m.bn)  # update conv
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\utils\torch_utils.py", line 203, in fuse_conv_and_bn
+    w_conv = conv.weight.clone().view(conv.out_channels, -1)
+             ^^^^
+KeyboardInterrupt

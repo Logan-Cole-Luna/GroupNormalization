@@ -1,0 +1,60 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mtrain: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+[34m[1mAMP: [39m[22mchecks failed ❌. Anomalies were detected with AMP on your system that may lead to NaN losses or zero-mAP results, so AMP will be disabled during training.
+[34m[1mval: [39m[22mScanning C:\Users\Logan\OneDrive\Past Documents\GitHub\datasets\coco128\labels\train2017.cache... 126 images, 2 backgrounds, 0 corrupt: 100%|██████████| 128/128 [00:00<?, ?it/s]
+Plotting labels to C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train155\labels.jpg...
+        1/1      1.31G       1.46      3.468      1.579         35        640:  12%|█▎        | 4/32 [00:01<00:05,  4.98it/s]
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000119, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mC:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train155
+Starting training for 1 epochs...
+
+        1/1      1.33G      1.402      2.541       1.44         38        640: 100%|██████████| 32/32 [00:03<00:00,  9.41it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 16/16 [00:02<00:00,  5.85it/s]
+                   all        128        929      0.404      0.285      0.283      0.191
+Traceback (most recent call last):
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\TestYolo.py", line 9, in <module>
+    train_yolo()
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\TestYolo.py", line 5, in train_yolo
+    results = model.train(data="coco128.yaml", epochs=1, imgsz=640, batch=4)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\model.py", line 674, in train
+    self.trainer.train()
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\trainer.py", line 199, in train
+    self._do_train(world_size)
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\trainer.py", line 464, in _do_train
+    self.final_eval()
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\trainer.py", line 642, in final_eval
+    self.metrics = self.validator(model=f)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\engine\validator.py", line 124, in __call__
+    model = AutoBackend(
+            ^^^^^^^^^^^^
+  File "C:\Users\Logan\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\nn\autobackend.py", line 157, in __init__
+    model = attempt_load_weights(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\nn\tasks.py", line 784, in attempt_load_weights
+    ensemble.append(model.fuse().eval() if fuse and hasattr(model, "fuse") else model.eval())  # model in eval mode
+                    ^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\nn\tasks.py", line 185, in fuse
+    m.conv = fuse_conv_and_bn(m.conv, m.bn)  # update conv
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub\ultralytics\ultralytics\ultralytics\utils\torch_utils.py", line 191, in fuse_conv_and_bn
+    running_var = bn.running_var.view(num_groups, group_size)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: shape '[8, 2]' is invalid for input of size 1204224
+1 epochs completed in 0.003 hours.
+Optimizer stripped from C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train155\weights\last.pt, 16.3MB
+Optimizer stripped from C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train155\weights\best.pt, 16.3MB
+Validating C:\Users\Logan\OneDrive\Past Documents\GitHub\FeaturePointTracking\runs\detect\train155\weights\best.pt...
+Ultralytics YOLOv8.2.32 🚀 Python-3.12.2 torch-2.2.2+cu121 CUDA:0 (NVIDIA GeForce RTX 3060, 12287MiB)
