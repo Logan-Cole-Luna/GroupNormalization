@@ -2,9 +2,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-
 # Define the fusion function for Group Norm and Conv layers
-def fuse_group_norm_conv(conv, gn):
+def fuse_group_norm(conv, gn):
     # Ensure the layers are compatible for fusion
     assert isinstance(conv, nn.Conv2d) and isinstance(gn, nn.GroupNorm)
 
@@ -45,42 +44,6 @@ def fuse_group_norm_conv(conv, gn):
     return fused_conv
 
 
-# Define a sample neural network with Conv2d and GroupNorm
-class SampleNet(nn.Module):
-    def __init__(self):
-        super(SampleNet, self).__init__()
-        self.conv = nn.Conv2d(3, 16, kernel_size=3, padding=1)
-        self.gn = nn.GroupNorm(num_groups=4, num_channels=16)
-
-    def forward(self, x):
-        x = self.conv(x)
-        x = self.gn(x)
-        return x
-
-
-# Create a function to test the fusion
-def test_fusion():
-    # Create a sample input
-    x = torch.randn(1, 3, 32, 32)
-
-    # Initialize the network and get the output before fusion
-    model = ConvNet()
-    before_fusion_output = model(x)
-
-    # Fuse the GroupNorm and Conv2d layers
-    fused_conv = fuse_group_norm_conv(model.conv, model.gn)
-
-    # Replace the layers in the model with the fused layer
-    model.conv = fused_conv
-    model.gn = nn.Identity()  # Remove GroupNorm layer
-
-    # Get the output after fusion
-    after_fusion_output = model(x)
-
-    # Compare the outputs
-    print("Difference after fusion:", torch.abs(before_fusion_output - after_fusion_output).max().item())
-
-
 # Updated ConvNet model with GroupNorm and fusion functionality
 class ConvNet(nn.Module):
     def __init__(self):
@@ -113,28 +76,33 @@ class ConvNet(nn.Module):
         return x
 
 
+# Create a function to test the fusion
+def test_fusion():
+    # Create a sample input
+    x = torch.randn(1, 3, 32, 32)
+
+    # Initialize the network and get the output before fusion
+    model = ConvNet()
+    before_fusion_output = model(x)
+
+    # Fuse the GroupNorm and Conv2d layers
+    fused_conv1 = fuse_group_norm(model.conv1, model.gn1)
+    fused_conv2 = fuse_group_norm(model.conv2, model.gn2)
+
+    # Replace the layers in the model with the fused layers
+    model.conv1 = fused_conv1
+    model.gn1 = nn.Identity()  # Remove GroupNorm layer
+    model.conv2 = fused_conv2
+    model.gn2 = nn.Identity()  # Remove GroupNorm layer
+
+    # Get the output after fusion
+    after_fusion_output = model(x)
+
+    # Compare the outputs
+    print("Difference after fusion:", torch.abs(before_fusion_output - after_fusion_output).max().item())
+
 
 # Test fusion function
 if __name__ == "__main__":
-    # Initialize the model, loss function, and optimizer
-    model = ConvNet()
-    criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
-
-    # Dummy input and output for testing
-    input_tensor = torch.randn(1, 3, 32, 32)
-    output_tensor = torch.tensor(1)  # Corrected target tensor
-
-    # Forward pass
-    output = model(input_tensor)
-    loss = criterion(output, output_tensor.unsqueeze(0))  # Ensuring correct shape
-
-    # Backward pass and optimization
-    optimizer.zero_grad()
-    loss.backward()
-    optimizer.step()
-
-    print("Output:", output)
-    print("Loss:", loss.item())
 
     test_fusion()
